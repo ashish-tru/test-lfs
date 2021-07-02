@@ -1,0 +1,755 @@
+:export {
+  THEME_COLOR_0: #2477f3;
+  // THEME_COLOR_1: #4169e1;
+  // THEME_COLOR_2: #9c65d5;
+  // THEME_COLOR_3: #46a193;
+  // THEME_COLOR_4: #fd5830;
+  // THEME_COLOR_5: #ff4a6f;
+  // THEME_COLOR_6: #58ba55;
+  // THEME_COLOR_7: #37baca;
+  // THEME_COLOR_8: #f44450;
+  // THEME_COLOR_9: #ffa12f;
+  // THEME_COLOR_10: #1da1f2;
+  // new colors
+  THEME_COLOR_1: #3e50da;
+  THEME_COLOR_2: #8e41c9;
+  THEME_COLOR_3: #1da1f2;
+  THEME_COLOR_4: #00857a;
+  THEME_COLOR_5: #008760;
+  THEME_COLOR_6: #e21a60;
+  THEME_COLOR_7: #f31626;
+  THEME_COLOR_8: #ec4800;
+  THEME_COLOR_9: #e68c0b;
+}
+
+$colors: (
+  // newcolors
+  black_color: #181818,
+  white_color: #fff,
+  dark_grey_color: #606060,
+  whitish_ligh_grey_1: #cecece,
+  whitish_ligh_grey_2: #aaa,
+  whitish_ligh_grey_3: #e0e0e0,
+  whitish_ligh_grey_4: #f9f9f9,
+  whitish_light_grey_5: #e5e5e5,
+  // newcolors
+  whitish_light_grey_6: #fbfbfb,
+  whititsh_light_grey_7: #e2e2e2,
+  whitish_light_grey_8: #e9e9e9,
+  whitish_light_grey_9: #f1f2f3,
+  very_dark_grey_1: #1e272e,
+  very_dark_grey_2: #2b343b,
+  very_dark_grey_3: #232c33,
+  very_dark_grey_4: #2a343b,
+  very_dark_grey_5: #2b343b,
+  very_dark_grey_6: #384047,
+  very_dark_grey_7: #272f36,
+  very_dark_grey_8: #333e46,
+  very_dark_grey_9: #252f36,
+  // newcolors
+  dark_grey_1: #373737,
+  // dark_grey_2: #404040,
+  // dark_grey_3: #454e56,
+  // dark-grey_4: #657078,
+  // dark_grey_5: #4e5255,
+  // new UI colors
+  dark_grey_2: #4b4b4b,
+  dark_grey_3: #5f5f5f,
+  dark-grey_4: #202020,
+  dark_grey_5: #282828,
+  dark_grey_6: #2c2c2c,
+  dark_grey_7: #2a2a2a,
+  dark_grey_8: #1d1d1d,
+  dark_grey_9: #303030,
+  dark_grey_10: #2d2d2d,
+  very_dark_grey_10: #030303,
+  // newcolors ends
+  grey_color: #808080,
+  light_grey_1: #b7b9bb,
+  light_grey_2: #abaeb0,
+  light_grey_3: #a9a9a9,
+  very_light_grey_1: #ddd,
+  very_light_grey_2: #cdcdcd,
+  very_light_grey_3: #d6d6d6,
+  very_light_grey_4: #d6d7d8,
+  very_light_grey_5: #ccc,
+  very_light_grey_6: #bdbdbd,
+  very_light_grey_7: #cdcdcd,
+  dark_shadow_1: rgba(0, 0, 0, 0.788),
+  dark_shadow_2: rgba(0, 0, 0, 0.08),
+  dark_shadow_3: rgba(0, 0, 0, 0.2),
+  dark_shadow_4: rgba(0, 0, 0, 0.6),
+  dark_sahdow_5: rgba(0, 0, 0, 0.3),
+  dark_shadow_6: rgba(0, 0, 0, 0.1),
+  dark_shadow_7: rgba(30, 39, 46, 0.8),
+  light_shadow_1: rgba(255, 255, 255, 0.74),
+  light_shadow_2: rgba(255, 255, 255, 0.8),
+  light_shadow_3: rgb(232, 232, 232),
+  dark_shadow_8: rgba(0, 0, 0, 0.36),
+  colored_shadow: rgb(29, 95, 194),
+  //new colors
+  dark_text_color: #aaa,
+  dark_color: #181818,
+  dark_color_1: #4b4b4b,
+  dark_color_2: #373737,
+  dark_color_3: #282828,
+  dark_color_4: #545454,
+  dark_color_5: #222,
+  dark_color_6: #202020,
+  dark_color_7: #151515,
+  light_text_color: #606060,
+  light_color: #f1f1f1,
+  light_color_1: #e5e5e5,
+  light_color_2: #f9f9f9,
+  light_color_3: #e0e0e0,
+  light_color_4: #f4f4f4,
+  light_color_5: #ebebeb,
+  light_color_6: #f9f9f9,
+  light_color_7: #e4e4e4,
+  light_color_8: #fefefe,
+  light_color_9: #ededed,
+  light_color_10: #e0e0e0,
+  light_color_12: #ababab,
+  light_color_13: #efefef,
+  // New color for tab backgrounds
+  light_color_14: #e8e8e8,
+  //new color for scrollbar
+  light_color_11: #d9d9d9,
+  light_grey_color_1: #dedede,
+  light_grey_color_2: #cecece,
+  //new shadow colors
+  light_shadow_color_1: rgba(160, 160, 160, 0.25),
+  overlay_light_color_1: rgba(255, 255, 255, 0),
+  overlay_light_color_2: rgba(255, 255, 255, 1),
+  overlay_light_color_3: rgba(238, 238, 238, 0.7),
+  dark_shadow_color_1: rgba(0, 0, 0, 0.23),
+  dark_shadow_color_2: rgba(0, 0, 0, 0.3),
+  overlay_dark_color_1: rgba(24, 24, 24, 0),
+  overlay_dark_color_2: rgba(24, 24, 24, 1),
+  overlay_dark_color_3: rgba(34, 34, 34, 0.7),
+  // new colored colors
+  colored_text: #2477f3,
+  colored_dark_1: rgba(36, 119, 243, 0.402),
+  colored_dark_2: rgba(36, 119, 243, 0.7),
+  colored_light_1: rgba(36, 119, 243, 0.102),
+  colored_light_2: rgba(36, 119, 243, 0.1)
+);
+
+$colors-dark: (
+  scrollbar_color: map-get($colors, dark_grey_3),
+  // text_color: map-get($colors, whitish_light_grey_6),
+  // new designs color
+  startup_progressbar: map-get($colors, dark_shadow_8),
+  text_color: map-get($colors, whitish_ligh_grey_2),
+  sub_heading_color: map-get($colors, whitish_ligh_grey_2),
+  heading_color: map-get($colors, white_color),
+  progressbar_bg: map-get($colors, dark_grey_1),
+  dividerline_color: map-get($colors, dark_grey_1),
+  button_background_color: map-get($colors, dark_grey_1),
+  button_border_color: map-get($colors, dark_grey_2),
+  button_text_color: map-get($colors, white_color),
+  button_background_hover_color: map-get($colors, dark_grey_2),
+  button_border_hover_color: map-get($colors, dark_grey_3),
+  screen_background: map-get($colors, black_color),
+  folder_icon_hover: map-get($colors, dark_shadow_1),
+  user_info_border_color: map-get($colors, dark_grey_1),
+  account_setting_row_bg: map-get($colors, dark-grey_4),
+  account_setting_border_color: map-get($colors, dark_grey_1),
+  vertical_tab_hover_color: map-get($colors, dark_grey_5),
+  notification_side_background_color: map-get($colors, dark_grey_5),
+  vertical_tab_content_row_border: map-get($colors, dark_grey_1),
+  account_info_password: map-get($colors, whitish_ligh_grey_2),
+  vertical_tab_li_color: map-get($colors, whitish_ligh_grey_2),
+  vertical_tab_li_color_bg: map-get($colors, black_color),
+  vertical_tab_li_hover_color: map-get($colors, white_color),
+  logout_modal_heading_color: map-get($colors, white_color),
+  logout_modal_background_color: map-get($colors, dark_grey_4),
+  user_info_background_color: map-get($colors, dark-grey_4),
+  user_info_modal_title: map-get($colors, white_color),
+  modal_content: map-get($colors, whitish_ligh_grey_2),
+  modal_heading_border: map-get($colors, dark_grey_1),
+  input_color_border: map-get($colors, dark_color_2),
+  input_color_text: map-get($colors, white_color),
+  modal_overlay_background_color: map-get($colors, dark_shadow_4),
+  download_title: map-get($colors, white_color),
+  error_title: map-get($colors, white_color),
+  relunch_text_color: map-get($colors, white_color),
+  download_border_color: map-get($colors, dark_grey_6),
+  passowrd_modal_list: map-get($colors, whitish_ligh_grey_2),
+  passowrd_modal_list_bold: map-get($colors, white_color),
+  passowrd_modal_list_heading: map-get($colors, white_color),
+  passowrd_modal_status_text: map-get($colors, whitish_ligh_grey_2),
+  modal_show_background: map-get($colors, dark-grey_4),
+  project_settings_divider_color: map-get($colors, dark_grey_7),
+  click_here_content_color: map-get($colors, whitish_ligh_grey_2),
+  tabs_text_color: map-get($colors, whitish_ligh_grey_2),
+  tabs_border_color: map-get($colors, dark_grey_7),
+  tabs_active_border_color: map-get($colors, dark_grey_1),
+  tabs_active_text_color: map-get($colors, light_color_8),
+  tabs_background_color: map-get($colors, dark-grey_4),
+  tabs_active_background_color: map-get($colors, dark_grey_1),
+  project_setting_website_tab_text: map-get($colors, whitish_ligh_grey_2),
+  project_setting_website_list_border: map-get($colors, dark_grey_7),
+  project_setting_website_list_hover: map-get($colors, dark_grey_8),
+  project_setting_tab_heading_color: map-get($colors, white_color),
+  project_setting_tab_utilities_col_bg: map-get($colors, dark-grey_4),
+  project_setting_tab_utilities_button_hover: map-get($colors, dark_grey_5),
+  project_setting_tab_utilities_button_hover_color:
+    map-get($colors, white_color),
+  project_setting_tab_utilities_col_text_color:
+    map-get($colors, whitish_ligh_grey_2),
+  project_setting_tab_utilities_col_border_color: map-get($colors, dark_grey_9),
+  project_setting_tab_utilities_extension_color:
+    map-get($colors, whitish_ligh_grey_2),
+  modal_background: map-get($colors, dark-grey_4),
+  modal_notification_background: map-get($colors, dark_grey_5),
+  modal_divider_color: map-get($colors, dark_grey_1),
+  modal_text_color: map-get($colors, whitish_ligh_grey_2),
+  find_replace_input_color: map-get($colors, whitish_ligh_grey_2),
+  create_link_icon_bg: map-get($colors, black_color),
+  sidebar_dropdown_hover: map-get($colors, dark_grey_10),
+  project_list_indicator: map-get($colors, light_color_12),
+  project_list_hover_color: map-get($colors, whitish_ligh_grey_2),
+  project_list_text_color: map-get($colors, whitish_ligh_grey_2),
+  setting_up_site_progress_info: map-get($colors, whitish_ligh_grey_2),
+  modal_input_label_color: map-get($colors, dark-grey_4),
+  accordion_dropdown_hover_color: map-get($colors, white_color),
+  accordion_active_color: map-get($colors, white_color),
+  disable_button_border_color: map-get($colors, dark_grey_1),
+  terminal_background_color: map-get($colors, dark_color_7),
+  terminal_border_color: map-get($colors, dark_grey_1),
+  tab_list_beta_bg_color: map-get($colors, black_color),
+  // new designs color end
+  caption_color: map-get($colors, very_light_grey_7),
+  landing_background_color: map-get($colors, dark_grey_1),
+  landing_text_color: map-get($colors, white_color),
+  dashboard_background_color: map-get($colors, very_dark_grey_1),
+  empty_add_block_background_color: map-get($colors, very_dark_grey_2),
+  empty_add_block_border_color: map-get($colors, dark_grey_3),
+  empty_add_block_box_shadow: map-get($colors, dark_shadow_3),
+  radio_card_background_color: map-get($colors, dark_color_6),
+  radio_card_border_color: map-get($colors, dark_color_2),
+  radio_card_box_shadow: map-get($colors, dark_shadow_2),
+  radio_card_background_onhover: map-get($colors, very_dark_grey_6),
+  radio_card_border_onhover: map-get($colors, very_dark_grey_6),
+  radio_card_boxshadow_onhover: map-get($colors, dark_shadow_3),
+  grid_card_background_color: map-get($colors, very_dark_grey_2),
+  grid_card_border_color: map-get($colors, dark_grey_3),
+  subtitle_text_color: map-get($colors, light_grey_2),
+  // select_background: map-get($colors, very_dark_grey_6),
+  //new color for select
+  select_background: map-get($colors, dark_color_3),
+  select_border: map-get($colors, dark_grey_3),
+  select_hover: map-get($colors, dark_color_2),
+  project_settings_container_background_color:
+    map-get($colors, very_dark_grey_1),
+  project_settings_top_area: map-get($colors, very_dark_grey_2),
+  project_settings_button_background_color: map-get($colors, very_dark_grey_2),
+  project_settings_button_border_color: map-get($colors, dark_grey_3),
+  tab_border_color: map-get($colors, dark_grey_3),
+  tab_hover_color: map-get($colors, very_dark_grey_2),
+  list_element_hover: map-get($colors, very_dark_grey_3),
+  list_element_border_color: map-get($colors, dark_grey_3),
+  header_background_color: map-get($colors, very_dark_grey_2),
+  hoc_border_color: map-get($colors, very_dark_grey_1),
+  dropdown_background_color: map-get($colors, dark_grey),
+  dropdown_border_color: map-get($colors, dark_grey_3),
+  collapse_card_background_hover: map-get($colors, very_dark_grey_7),
+  search_border_color: map-get($colors, light_grey_2),
+  search_background_color: map-get($colors, very_dark_grey_2),
+  list_header_border: map-get($colors, very_dark_grey_6),
+  resize_sidebar_border_color: map-get($colors, very_dark_grey_1),
+  resize_sidebar_hover_color: map-get($colors, very_dark_grey_1),
+  texthighlighter_background_color: map-get($colors, dark_grey_5),
+  texthighlighter_text_color: map-get($colors, very_light_grey_5),
+  texthighlighter_border_color: map-get($colors, dark_grey_3),
+  texthighlighter_box_shadow_color: map-get($colors, dark_sahdow_5),
+  //change the color
+  disable_button_text: map-get($colors, dark_color_1),
+  disable_button_background: map-get($colors, dark_color_6),
+  custom_border_start_site_color: map-get($colors, dark_grey_3),
+  tooltip_background_collapsed_color: map-get($colors, very_light_grey_1),
+  tooltip_border_collapsed_color: map-get($colors, very_light_grey_1),
+  tooltip_text_collapsed_color: map-get($colors, dark_grey_3),
+  collapse_card_diable: map-get($colors, dark_grey_3),
+  custom_background_start_site_color: map-get($colors, very_dark_grey_8),
+  search_text_color: map-get($colors, dark_text_color),
+  rocket_progress_bar_background_color: map-get($colors, dark_grey_3),
+  switch_inactive_background_color: map-get($colors, dark-grey_4),
+  text_disable_card: map-get($colors, dark_grey_3),
+  git_input_color: map-get($colors, light_grey_2),
+  simple_progress_circle_bacground_color: map-get($colors, very_dark_grey_2),
+  import_db_input_box: map-get($colors, very_dark_grey_9),
+  import_db_input_box_border: map-get($colors, very_dark_grey_1),
+  import_db_box_background: map-get($colors, very_dark_grey_2),
+  import_db_overlay: map-get($colors, dark_shadow_7),
+  import_db_box_shadow: map-get($colors, dark_shadow_3),
+  accordion_background_color: map-get($colors, dark_grey_6),
+  tag_text_color: map-get($colors, dark-grey_4),
+  tag_disable_text_color: map-get($colors, dark_color_1),
+  accordion_border_color: map-get($colors, very_dark_grey_1),
+  website_clone_border_color: map-get($colors, dark-grey_4),
+  box_card_diable: map-get($colors, dark_grey_3),
+  tooltip_select_background: map-get($colors, dark_grey_3),
+  website_download_file_color: map-get($colors, very_dark_grey_1),
+  website_download_file_circle_color: map-get($colors, very_dark_grey_5),
+  download_divider_color: map-get($colors, very_dark_grey_2),
+  website_clone_tag_hover_color: map-get($colors, very_dark_grey_2),
+  git_sidebar_close_border_color: map-get($colors, dark_grey_3),
+  git_divider_color: map-get($colors, very_dark_grey_1),
+  tooltip_default_background: map-get($colors, dark_color_4),
+  tooltip_title_color: map-get($colors, light_color_5),
+  tooltip_tag_background_color: map-get($colors, very_light_grey_1),
+  checkbox_default_border_color: map-get($colors, dark_grey_3),
+  bottom_notification_background: map-get($colors, very_dark_grey_4),
+  icon_box_border_color: map-get($colors, dark_color_1),
+  icon_box_outline_background_color: map-get($colors, dark_color_2),
+  input_border_color: map-get($colors, dark_color_2),
+  menu_card_color: map-get($colors, dark_color_3),
+  menu_card_text_color: map-get($colors, white_color),
+  divider_color: map-get($colors, dark_color_2),
+  dashboard_background: map-get($colors, dark_color),
+  hoc_sidebar: map-get($colors, dark_color_3),
+  project_setting_sidebar: map-get($colors, dark_color_5),
+  search_title_color: map-get($colors, light_grey_color_1),
+  separator_color: map-get($colors, dark_color_2),
+  option_border_color: map-get($colors, dark_color_2),
+  option_title_color: map-get($colors, dark_text_color),
+  badge_text_color: map-get($colors, white_color),
+  option_background_color: map-get($colors, dark_color_2),
+  list_box_shadow_color: map-get($colors, dark_shadow_color_1),
+  online_background_color: map-get($colors, dark_text_color),
+  notification_background_color: map-get($colors, dark_color_6),
+  all_project_overlay_start_color: map-get($colors, overlay_dark_color_1),
+  all_project_overlay_last_color: map-get($colors, overlay_dark_color_2),
+  card_box_shadow_color: map-get($colors, dark_shadow_color_2),
+  scrollbar_roll_color: map-get($colors, dark_color_1),
+  card_background_color_hover: map-get($colors, dark_color_3),
+  text_disable_color: map-get($colors, dark_color_1),
+  tag_outline_background_color: map-get($colors, dark_color_2),
+  tag_outline_border_color: map-get($colors, dark_color_1),
+  tag_disable_background_color: map-get($colors, dark_color_6),
+  tag_outline_border_disable_color: map-get($colors, dark_color_2),
+  progress_bar_circle_outline_color: map-get($colors, dark_color_2),
+  serachbar_input_background: map-get($colors, dark_color_7),
+  notification_text_color: map-get($colors, white_color),
+  notification_float_background_color: map-get($colors, colored_dark_1),
+  notification_float_border_background_color: map-get($colors, colored_dark_2),
+  disable_text_color: map-get($colors, dark_grey_2),
+  input_loader_background: map-get($colors, overlay_dark_color_3),
+  release_modal_background: map-get($colors, dark-grey_4),
+  select_box_background: map-get($colors, dark_color_3),
+  tab_sync_col_background: map-get($colors, dark_color_7),
+  release_modal_background_color: map-get($colors, dark_grey_1 ),
+);
+$colors-light: (
+  // new designs color
+  heading_color: map-get($colors, very_dark_grey_10),
+  text_color: map-get($colors, dark_grey_color),
+  sub_heading_color: map-get($colors, dark_grey_color),
+  startup_progressbar: map-get($colors, light_shadow_3),
+  progressbar_bg: map-get($colors, whitish_ligh_grey_1),
+  dividerline_color: map-get($colors, whitish_ligh_grey_3),
+  button_background_color: map-get($colors, whitish_ligh_grey_4),
+  button_border_color: map-get($colors, whitish_light_grey_5),
+  button_text_color: map-get($colors, dark_grey_color),
+  button_background_hover_color: map-get($colors, white_color),
+  button_border_hover_color: map-get($colors, whitish_light_grey_5),
+  screen_background: map-get($colors, white_color),
+  folder_icon_hover: map-get($colors, colored_shadow),
+  user_info_border_color: map-get($colors, whitish_ligh_grey_3),
+  account_setting_row_bg: map-get($colors, whitish_ligh_grey_4),
+  account_setting_border_color: map-get($colors, whitish_light_grey_5),
+  vertical_tab_hover_color: map-get($colors, whitish_light_grey_5),
+  vertical_tab_content_row_border: map-get($colors, whitish_light_grey_5),
+  vertical_tab_li_color: map-get($colors, dark_grey_color),
+  vertical_tab_li_color_bg: map-get($colors, light_color),
+  vertical_tab_li_hover_color: map-get($colors, dark_grey_color),
+  account_info_password: map-get($colors, dark_grey_color),
+  account_setting_theme_mode_title: map-get($colors, dark_grey_color),
+  logout_modal_heading_color: map-get($colors, very_dark_grey_10),
+  logout_modal_background_color: map-get($colors, white_color),
+  user_info_modal_title: map-get($colors, very_dark_grey_10),
+  modal_content: map-get($colors, dark_grey_color),
+  modal_notification_background: map-get($colors, white_color),
+  modal_heading_border: map-get($colors, light_color_1),
+  user_info_background_color: map-get($colors, white_color),
+  input_color_border: map-get($colors, light_grey_color_2),
+  input_color_text: map-get($colors, very_dark_grey_10),
+  modal_overlay_background_color: map-get($colors, dark_shadow_4),
+  download_title: map-get($colors, dark_grey_color),
+  error_title: map-get($colors, very_dark_grey_10),
+  relunch_text_color: map-get($colors, very_dark_grey_10),
+  download_border_color: map-get($colors, light_color_7),
+  passowrd_modal_list: map-get($colors, dark_grey_color),
+  passowrd_modal_status_text: map-get($colors, dark_grey_color),
+  passowrd_modal_list_heading: map-get($colors, dark_grey_color),
+  project_settings_divider_color: map-get($colors, light_color_3),
+  click_here_content_color: map-get($colors, light_text_color),
+  project_setting_website_tab_text: map-get($colors, very_dark_grey_10),
+  project_setting_website_list_border: map-get($colors, whitish_light_grey_5),
+  project_setting_website_list_hover: map-get($colors, light_color_9),
+  tabs_text_color: map-get($colors, dark_grey_color),
+  tabs_border_color: map-get($colors, whitish_ligh_grey_3),
+  tabs_active_border_color: map-get($colors, whitish_ligh_grey_3),
+  tabs_active_text_color: map-get($colors, very_dark_grey_10),
+  tabs_background_color: map-get($colors, light_color_9),
+  tabs_active_background_color: map-get($colors, white_color),
+  project_setting_tab_heading_color: map-get($colors, very_dark_grey_10),
+  project_setting_tab_utilities_col_bg: map-get($colors, whitish_ligh_grey_4),
+  project_setting_tab_utilities_button_hover: map-get($colors, white_color),
+  project_setting_tab_utilities_col_text_color:
+    map-get($colors, dark_grey_color),
+  project_setting_tab_utilities_col_border_color:
+    map-get($colors, whitish_light_grey_5),
+  project_setting_tab_utilities_col_button_color: map-get($colors, white_color),
+  project_setting_tab_utilities_extension_color:
+    map-get($colors, dark_grey_color),
+  modal_background: map-get($colors, white_color),
+  modal_divider_color: map-get($colors, whitish_ligh_grey_3),
+  modal_text_color: map-get($colors, dark_grey_color),
+  create_link_icon_bg: map-get($colors, light_color),
+  sidebar_dropdown_hover: map-get($colors, light_color_9),
+  project_list_indicator: map-get($colors, whitish_ligh_grey_2),
+  project_list_hover_color: map-get($colors, black_color),
+  project_list_text_color: map-get($colors, dark_grey_color),
+  setting_up_site_progress_info: map-get($colors, dark_grey_color),
+  modal_input_label_color: map-get($colors, white_color),
+  accordion_dropdown_hover_color: map-get($colors, very_dark_grey_10),
+  accordion_active_color: map-get($colors, very_dark_grey_10),
+  disable_button_border_color: map-get($colors, whitish_light_grey_5),
+  notification_side_background_color: map-get($colors, white_color),
+  terminal_background_color: map-get($colors, light_color_13),
+  terminal_border_color: map-get($colors, whitish_ligh_grey_3),
+  tab_list_beta_bg_color: map-get($colors, whitish_ligh_grey_4),
+  // new designs color end
+  scrollbar_color: map-get($colors, light_grey_1),
+  caption_color: map-get($colors, dark_grey_2),
+  landing_background_color: map-get($colors, white_color),
+  landing_text_color: map-get($colors, dark_grey_2),
+  dashboard_background_color: map-get($colors, whitish_ligh_grey_1),
+  empty_add_block_background_color: map-get($colors, white_color),
+  empty_add_block_border_color: map-get($colors, whitish_ligh_grey_2),
+  empty_add_block_box_shadow: map-get($colors, dark_shadow_2),
+  radio_card_background_color: map-get($colors, light_color_6),
+  radio_card_border_color: map-get($colors, light_color_1),
+  radio_card_box_shadow: map-get($colors, dark_shadow_2),
+  radio_card_background_onhover: map-get($colors, white_color),
+  radio_card_border_onhover: map-get($colors, whitish_ligh_grey_2),
+  radio_card_boxshadow_onhover: map-get($colors, dark_shadow_2),
+  grid_card_background_color: map-get($colors, white_color),
+  grid_card_border_color: map-get($colors, whitish_ligh_grey_2),
+  subtitle_text_color: map-get($colors, grey_color),
+  select_background: map-get($colors, white_color),
+  select_border: map-get($colors, whitish_ligh_grey_3),
+  select_hover: map-get($colors, light_color_4),
+  project_settings_container_background_color:
+    map-get($colors, whitish_ligh_grey_1),
+  project_settings_top_area: map-get($colors, white_color),
+  project_settings_button_background_color: map-get($colors, white_color),
+  project_settings_button_border_color: map-get($colors, very_light_grey_1),
+  list_element_hover: map-get($colors, whitish_light_grey_5),
+  list_element_border_color: map-get($colors, very_light_grey_1),
+  tab_border_color: map-get($colors, very_light_grey_1),
+  tab_hover_color: map-get($colors, whitish_ligh_grey_4),
+  header_background_color: map-get($colors, white_color),
+  hoc_border_color: map-get($colors, whitish_ligh_grey_2),
+  dropdown_background_color: map-get($colors, white_color),
+  dropdown_border_color: map-get($colors, whitish_ligh_grey_3),
+  collapse_card_background_hover: map-get($colors, whitish_ligh_grey_1),
+  search_border_color: map-get($colors, whitish_ligh_grey_3),
+  search_background_color: map-get($colors, white_color),
+  list_header_border: map-get($colors, whitish_ligh_grey_2),
+  // resize_sidebar_backgrouund_color: map-get($colors),
+  resize_sidebar_border_color: map-get($colors, whitish_ligh_grey_2),
+  resize_sidebar_hover_color: map-get($colors, whitish_ligh_grey_1),
+  texthighlighter_background_color: map-get($colors, white_color),
+  texthighlighter_text_color: map-get($colors, grey_color),
+  texthighlighter_border_color: map-get($colors, very_light_grey_1),
+  texthighlighter_box_shadow_color: map-get($colors, dark_shadow_6),
+  //change color with new design color for disable
+  disable_button_text: map-get($colors, light_grey_color_2),
+  disable_button_background: map-get($colors, light_color_6),
+  custom_border_start_site_color: map-get($colors, very_light_grey_1),
+  tooltip_background_collapsed_color: map-get($colors, whitish_ligh_grey_1),
+  tooltip_border_collapsed_color: map-get($colors, whitish_ligh_grey_2),
+  tooltip_text_collapsed_color: map-get($colors, grey_color),
+  collapse_card_diable: map-get($colors, very_light_grey_2),
+  custom_background_start_site_color: map-get($colors, whitish_light_grey_9),
+  search_text_color: map-get($colors, light_text_color),
+  rocket_progress_bar_background_color: map-get($colors, very_light_grey_5),
+  switch_inactive_background_color: map-get($colors, very_light_grey_2),
+  text_disable_card: map-get($colors, very_light_grey_1),
+  git_input_color: map-get($colors, grey_color),
+  simple_progress_circle_bacground_color: map-get($colors, whitish_ligh_grey_3),
+  import_db_input_box: map-get($colors, whitish_ligh_grey_1),
+  import_db_input_box_border: map-get($colors, very_light_grey_1),
+  import_db_box_background: map-get($colors, white_color),
+  import_db_overlay: map-get($colors, light_shadow_2),
+  import_db_box_shadow: map-get($colors, dark_shadow_6),
+  accordion_background_color: map-get($colors, white_color),
+  tag_text_color: map-get($colors, very_light_grey_6),
+  tag_disable_text_color: map-get($colors, dark_text_color),
+  accordion_border_color: map-get($colors, very_light_grey_1),
+  website_clone_border_color: map-get($colors, very_light_grey_2),
+  box_card_diable: map-get($colors, very_light_grey_2),
+  tooltip_select_background: map-get($colors, whitish_ligh_grey_3),
+  website_download_file_color: map-get($colors, whitish_ligh_grey_1),
+  website_download_file_circle_color: map-get($colors, white_color),
+  download_divider_color: map-get($colors, whitish_ligh_grey_2),
+  website_clone_tag_hover_color: map-get($colors, whitish_ligh_grey_1),
+  git_sidebar_close_border_color: map-get($colors, very_light_grey_1),
+  git_divider_color: map-get($colors, whitish_ligh_grey_2),
+  tooltip_default_background: map-get($colors, light_text_color),
+  tooltip_title_color: map-get($colors, light_color_5),
+  tooltip_tag_background_color: map-get($colors, whitish_light_grey_8),
+  modal_show_background: map-get($colors, white_color),
+  bottom_notification_background: map-get($colors, white_color),
+  checkbox_default_border_color: map-get($colors, light_grey_3),
+  icon_box_border_color: map-get($colors, light_color_1),
+  icon_box_outline_background_color: map-get($colors, light_color_2),
+  input_border_color: map-get($colors, light_color_3),
+  menu_card_color: map-get($colors, white_color),
+  menu_card_text_color: map-get($colors, light_text_color),
+  divider_color: map-get($colors, light_color_1),
+  dashboard_background: map-get($colors, light_color),
+  hoc_sidebar: map-get($colors, white_color),
+  project_setting_sidebar: map-get($colors, light_color_6),
+  search_title_color: map-get($colors, dark_color_4),
+  separator_color: map-get($colors, light_color_10),
+  option_border_color: map-get($colors, light_color_1),
+  option_title_color: map-get($colors, light_text_color),
+  badge_text_color: map-get($colors, dark_grey_color),
+  option_background_color: map-get($colors, light_color_6),
+  list_box_shadow_color: map-get($colors, light_shadow_color_1),
+  online_background_color: map-get($colors, light_text_color),
+  notification_background_color: map-get($colors, white_color),
+  all_project_overlay_start_color: map-get($colors, overlay_light_color_1),
+  all_project_overlay_last_color: map-get($colors, overlay_light_color_2),
+  card_box_shadow_color: map-get($colors, light_shadow_color_1),
+  scrollbar_roll_color: map-get($colors, light_color_11),
+  card_background_color_hover: map-get($colors, white_color),
+  text_disable_color: map-get($colors, dark_text_color),
+  tag_outline_background_color: map-get($colors, light_color_6),
+  tag_outline_border_color: map-get($colors, light_color_1),
+  tag_disable_background_color: map-get($colors, light_color_1),
+  tag_outline_border_disable_color: map-get($colors, light_grey_color_2),
+  progress_bar_circle_outline_color: map-get($colors, light_grey_color_2),
+  serachbar_input_background: map-get($colors, light_color_13),
+  notification_text_color: map-get($colors, colored_text),
+  notification_float_background_color: map-get($colors, colored_light_1),
+  notification_float_border_background_color: map-get($colors, colored_light_2),
+  disable_text_color: map-get($colors, dark_text_color),
+  input_loader_background: map-get($colors, overlay_light_color_3),
+  release_modal_background: map-get($colors, white_color),
+  select_box_background: map-get($colors, whitish_ligh_grey_4),
+  tab_sync_col_background: map-get($colors, light_color_14),
+  release_modal_background_color: map-get($colors, light_color_9)
+);
+
+$theme_color: 'theme_color';
+$theme_color_onhover: 'theme_color_onhover';
+$theme_color_opacity: 'theme_color_opacity';
+//new variable for disable color
+$theme_color_disable: 'theme_color_disable';
+body[data-theme='light'] {
+  @each $name, $color in $colors-light {
+    --color-#{$name}: #{$color};
+  }
+}
+
+body[data-theme='dark'] {
+  @each $name, $color in $colors-dark {
+    --color-#{$name}: #{$color};
+  }
+}
+
+body[theme-color='Blue'] {
+  --color-#{$theme_color}: #2477f3;
+  --color-#{$theme_color_onhover}: #1d5fc2;
+  --color-#{$theme_color_opacity}: rgba(36, 119, 243, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #66a0f7;
+}
+body[theme-color='Orange'] {
+  --color-#{$theme_color}: #ec4800;
+  --color-#{$theme_color_onhover}: #bd3a00;
+  --color-#{$theme_color_opacity}: rgba(236, 72, 0, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #f27f4d;
+}
+// body[theme-color='Teal'] {
+//   --color-#{$theme_color}: #00857a;
+//   --color-#{$theme_color_onhover}: #006a62;
+//   --color-#{$theme_color_opacity}: rgba(77, 170, 162, 0.1);
+//   //new color
+//   --color-#{$theme_color_disable}: #4daaa2;
+// }
+body[theme-color='Purple'] {
+  --color-#{$theme_color}: #8e41c9;
+  --color-#{$theme_color_onhover}: #7234a1;
+  --color-#{$theme_color_opacity}: rgba(142, 65, 201, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #b07ad9;
+}
+body[theme-color='RoyalBlue'] {
+  --color-#{$theme_color}: #3e50da;
+  --color-#{$theme_color_onhover}: #3240ae;
+  --color-#{$theme_color_opacity}: rgba(62, 80, 218, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #7885e5;
+}
+body[theme-color='Pink'] {
+  --color-#{$theme_color}: #e21a60;
+  --color-#{$theme_color_onhover}: #b5154d;
+  --color-#{$theme_color_opacity}: rgba(226, 26, 96, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #eb5f90;
+}
+body[theme-color='Green'] {
+  --color-#{$theme_color}: #008760;
+  --color-#{$theme_color_onhover}: #006c4d;
+  --color-#{$theme_color_opacity}: rgba(0, 135, 96, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #4dab90;
+}
+body[theme-color='Teal'] {
+  --color-#{$theme_color}: #00857a;
+  --color-#{$theme_color_onhover}: #006a62;
+  --color-#{$theme_color_opacity}: rgba(0, 133, 122, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #4daaa2;
+}
+body[theme-color='Red'] {
+  --color-#{$theme_color}: #f31626;
+  --color-#{$theme_color_onhover}: #c2121e;
+  --color-#{$theme_color_opacity}: rgba(234, 22, 38, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #f75c68;
+}
+
+body[theme-color='Yellow'] {
+  --color-#{$theme_color}: #e68c0b;
+  --color-#{$theme_color_onhover}: #b87009;
+  --color-#{$theme_color_opacity}: rgba(230, 140, 11, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #eeaf55;
+}
+
+body[theme-color='LightBlue'] {
+  --color-#{$theme_color}: #1da1f2;
+  --color-#{$theme_color_onhover}: #1781c2;
+  --color-#{$theme_color_opacity}: rgba(29, 161, 242, 0.1);
+  //new color
+  --color-#{$theme_color_disable}: #61bdf6;
+}
+
+@function getcolor($color-name) {
+  @return var(--color-#{$color-name});
+}
+
+.draggable_bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 16px;
+  -webkit-app-region: drag;
+}
+
+/**
+Overlay for bottom notification css
+*/
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999999;
+}
+
+/**
+Bottom notification css
+*/
+
+.project_setting_bottom_notification > div:first-child {
+  margin: 0 30px;
+  background-color: getcolor(notification_float_background_color);
+  border: 1px solid getcolor(notification_float_border_background_color);
+  border-radius: 5px;
+  padding: 11px 6px;
+}
+
+.project_setting_bottom_notification > div:first-child::before {
+  display: none;
+}
+
+.project_setting_bottom_notification
+  .project_setting_bottom_notification_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_setting_bottom_notification
+  .project_setting_bottom_notification_content
+  img {
+  width: 12px;
+  margin-right: 12px;
+}
+
+.project_setting_bottom_notification
+  .project_setting_bottom_notification_content
+  .project_setting_bottom_notification_title {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(notification_text_color);
+}
+
+@media only screen and (max-width: 1399px) {
+  .project_setting_dashboard
+    .project_setting_bottom_notification
+    > div:first-child {
+    padding: 9px 5px;
+  }
+  .project_setting_dashboard
+    .project_setting_bottom_notification
+    .project_setting_bottom_notification_content
+    img {
+    width: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options {
+    padding: 9px 25px 9px 10px;
+    min-width: 120px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options
+    span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options_dropdown
+    ul
+    li
+    > div {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_bottom_notification
+    .project_setting_bottom_notification_content
+    .project_setting_bottom_notification_title {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}

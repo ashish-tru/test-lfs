@@ -1,0 +1,168 @@
+@import "../../../global.scss";
+
+
+.setting_up_site_dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding-bottom: 100px;
+}
+
+.setting_up_site_dashboard .overlay {
+  position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9999999;
+}
+.setting_up_site_dashboard .setting_up_site_container {
+  width: 100%;
+  max-width: 64%;
+  margin: 0 auto;
+}
+
+.setting_up_site_dashboard .setting_up_site_container .setting_up_site_heading {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Gilroy-Medium";
+  color: getcolor(heading_color);
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_name {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Gilroy-Medium";
+  color: getcolor(heading_color);
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail_item{
+  font-family: 'Gilroy-Medium';
+  font-size: 14px;
+  line-height: 14px;
+  color: getcolor(sub_heading_color);
+  padding: 0 40px;
+  border-right: 1px solid getcolor(divider_color);
+}
+.setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail_item:first-child{
+  padding-left: 0;
+}
+.setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail_item:last-child{
+  border: 0;
+  padding-right: 0;
+}
+
+.setting_up_site_dashboard .setting_up_site_logo {
+  cursor: default;
+}
+
+.setting_up_site_dashboard .setting_up_site_logo img {
+  width: 8%;
+  margin: 0 auto;
+}
+
+
+.setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_progress_info {
+  font-size: 16px;
+  color: getcolor(setting_up_site_progress_info);
+  line-height: 16px;
+  font-family: "Gilroy-Regular";
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+// Bottom notification bar start
+
+
+// Bottom notification bar ends
+
+@media only screen and (max-width: 1800px) {
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_heading {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_heading {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 70px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_name {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail {
+    margin-bottom: 50px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail_item{
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0 30px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_progress_info {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_heading {
+    margin-bottom: 60px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .setting_up_site_dashboard {
+    height: calc(100vh - 70px);
+    padding-bottom: 70px;
+  }
+
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_heading {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_name {
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail {
+    margin-bottom: 40px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_detail_item{
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_project_progress_info {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 20px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1199px){
+  .setting_up_site_dashboard .setting_up_site_container .setting_up_site_heading {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

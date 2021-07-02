@@ -1,0 +1,30 @@
+{
+  "name": "@stackabl/nginx",
+  "version": "1.16.0-beta",
+  "description": "Native Nginx Wrapper",
+  "author": "Stackabl",
+  "main": "src/index.ts",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "yarn clean && yarn build-wp",
+    "clean": "rimraf dist",
+    "test": "jest --forceExit --coverage --verbose --silent",
+    "build-ts": "tsc -p tsconfig.build.json",
+    "build-wp": "webpack  --config webpack.config.js",
+    "watch-ts": "tsc -w",
+    "start": " yarn build && node dist/index.js",
+    "download": "node -r @babel/register ./download.js",
+    "postinstall": "yarn download"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "26.0.12",
+    "@types/webpack": "4.41.21",
+    "jest": "26.1.0",
+    "ts-jest": "26.4.4",
+    "ts-loader": "8.0.7",
+    "typescript": "3.9.7",
+    "webpack": "4.43.0",
+    "webpack-obfuscator": "2.6.0"
+  }
+}

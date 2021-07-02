@@ -1,0 +1,3973 @@
+@import '../../../global.scss';
+
+/** heading section and buttons **/
+
+.project_setting_dashboard {
+  height: 100vh;
+}
+.project_setting_dashboard .expand_grid{
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: getcolor(dashboard_background);
+  padding: 40px !important;
+}
+.project_setting_dashboard .project_settings_container_outer {
+  position: relative;
+  height: 100%;
+}
+.project_setting_dashboard
+  .project_setting_info_description_action_main_overlay {
+  opacity: 0.3;
+  pointer-events: none;
+  position: relative;
+}
+.project_setting_dashboard
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .website_setting_outer {
+  height: 100%;
+}
+
+.project_setting_dashboard .project_settings_tab_sync_download {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+.project_setting_dashboard .project_settings_tab_sync_download img {
+  width: 50px;
+}
+.project_setting_dashboard .project_settings_skelton_loading{
+  flex: 1;
+}
+.project_setting_dashboard .project_settings_screen_overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background-color: getcolor(terminal_background_color);
+}
+
+.project_setting_dashboard .project_setting_bottom_terminal {
+  background-color: getcolor(terminal_background_color);
+  border-top: 1px solid getcolor(terminal_border_color);
+  height: 120px;
+  display: block;
+  padding: 20px 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.project_setting_dashboard
+  .project_setting_bottom_terminal::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+.project_setting_dashboard .project_setting_bottom_terminal::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.project_setting_dashboard
+  .project_setting_bottom_terminal::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: getcolor(scrollbar_roll_color);
+}
+.project_setting_dashboard .project_setting_bottom_terminal p {
+  font-size: 12px;
+  line-height: 12px;
+  color: getcolor(text_color);
+  margin-bottom: 10px;
+  font-family: 'Gilroy-Regular';
+}
+.project_setting_dashboard .project_setting_bottom_terminal p:last-child {
+  margin-bottom: 0;
+}
+
+.project_setting_dashboard .project_setting_go_to_extention div {
+  padding: 0;
+}
+.project_setting_dashboard .project_settings_sync_bar > div{
+  bottom: 0;
+  position: absolute;
+}
+.project_setting_dashboard
+ .project_settings_sync_bar
+  > div > div {
+    justify-content: space-between!important;
+   padding: 10px 15px;
+  }
+
+.project_setting_dashboard .project_settings_sync_bar .project_settings_tab_sync_content .project_settings_tab_sync_text{
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 10px;
+  color: getcolor(heading_color);
+}
+
+.project_setting_dashboard .project_settings_sync_bar .project_settings_tab_sync_button{
+  font-size: 12px;
+  line-height: 12px;
+  padding: 8px 10px;
+}
+
+.project_setting_dashboard
+  .project_setting_bottom_notification
+  > div:first-child {
+  margin: 0 30px;
+  background-color: getcolor(notification_float_background_color);
+  border: 1px solid getcolor(notification_float_border_background_color);
+  border-radius: 5px;
+  padding: 11px 6px;
+}
+.project_setting_dashboard
+  .project_setting_bottom_notification
+  > div:first-child::before {
+  display: none;
+}
+
+.project_setting_dashboard
+  .project_setting_bottom_notification
+  .project_setting_bottom_notification_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project_setting_dashboard
+  .project_setting_bottom_notification
+  .project_setting_bottom_notification_content
+  img {
+  width: 12px;
+  margin-right: 12px;
+}
+.project_setting_dashboard
+  .project_setting_bottom_notification
+  .project_setting_bottom_notification_content
+  .project_setting_bottom_notification_title {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(notification_text_color);
+}
+.project_setting_dashboard .overlay_skeleton {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.project_setting_dashboard .overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999999;
+}
+.project_setting_dashboard .project_setting_go_to_extention {
+  background-color: getcolor(theme_color_opacity);
+  border: 1px solid getcolor(theme_color_opacity);
+  border-radius: 5px;
+  padding: 0 15px;
+  height: 50px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+  width: auto;
+}
+
+.project_setting_dashboard .project_setting_go_to_extention p {
+  color: getcolor(project_setting_tab_utilities_extension_color);
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 0;
+  font-family: 'Gilroy-Regular';
+}
+
+.project_setting_dashboard
+  .project_setting_go_to_extention
+  .project_setting_extention_button {
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 0;
+  border: 0;
+}
+
+.project_setting_dashboard
+  .project_setting_go_to_extention
+  .project_setting_extention_button
+  span {
+  color: getcolor(theme_color);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Gilroy-Medium';
+}
+
+.project_setting_dashboard
+  .project_setting_go_to_extention
+  .project_setting_extention_button
+  span:hover {
+  text-decoration: underline;
+}
+
+.project_setting_dashboard .project_setting_container {
+  padding: 0 40px;
+}
+
+.project_setting_dashboard .project_setting_container .project_setting_heading {
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-family: 'Gilroy-Bold';
+  color: getcolor(heading_color);
+  border-bottom: 1px solid getcolor(project_settings_divider_color);
+}
+
+.project_setting_dashboard .project_setting_container .project_setting_info {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(click_here_content_color);
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_info_top_description {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(click_here_content_color);
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_info_outer {
+  display: flex;
+  align-items: center;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_info_outer
+  .project_setting_add_decription_link {
+  color: getcolor(theme_color);
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_info_outer
+  .project_setting_add_decription_link:hover {
+  text-decoration: underline;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_info_outer
+  .project_setting_click_here {
+  display: inline-block;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_info_outer
+  .project_setting_click_here
+  img {
+  width: 12px;
+  margin-right: 14px;
+}
+
+.project_setting_dashboard .project_setting_container .project_setting_actions {
+  margin-top: 35px;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_col {
+  display: flex;
+  align-items: center;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_col.project_setting_actions_col_right {
+  padding-right: 13px;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons {
+  margin-right: 10px;
+  padding: 12px 15px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons.project_setting_actions_start_icon {
+  min-width: 120px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons.project_setting_action_view_site {
+  min-width: 150px;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons.project_setting_action_view_site.project_setting_action_view_site_disable {
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons.project_setting_action_view_site.project_setting_action_view_site_disable
+  span {
+  cursor: not-allowed !important;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons.project_setting_action_view_site.project_setting_action_view_site_enable {
+  cursor: pointer !important;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons.project_setting_action_view_site.project_setting_action_view_site_enable
+  span {
+  cursor: pointer !important;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons.project_setting_action_public_link {
+  min-width: 130px;
+}
+
+.project_setting_dashboard
+  .website_setting_outer
+  .project_setting_tabs_content_website_settings
+  .select_view_website_outer {
+  display: inline-block;
+}
+.project_setting_dashboard .website_setting_outer .project_settings_list_beta {
+  font-size: 10px;
+  line-height: 10px;
+  color: getcolor(heading_color);
+  padding: 4px 6px;
+  min-width: 30px;
+  border-radius: 4px;
+  border: 1px solid getcolor(radio_card_border_color);
+  background-color: getcolor(radio_card_background_color);
+  text-transform: uppercase;
+  font-family: 'Gilroy-Bold';
+  display: inline-flex;
+}
+.project_setting_dashboard
+  .website_setting_outer
+  .project_settings_list_beta_col {
+  padding-left: 0;
+}
+.project_setting_dashboard .select_version_loader_col {
+  padding-left: 0;
+}
+.project_setting_dashboard .select_version_loader_col .select_version_loader {
+  width: 12px;
+  display: block;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_options {
+  background-color: getcolor(button_background_color);
+  border: 1px solid getcolor(button_border_color);
+  min-width: 150px;
+  padding: 12px 30px 12px 10px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .button_dropdown_view_website {
+  margin-right: 10px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_options.project_settings_view_disable {
+  background-color: getcolor(disable_button_background);
+  color: getcolor(disable_button_text);
+  border: 1px solid getcolor(disable_button_border_color);
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_options
+  span {
+  font-size: 14px;
+  line-height: 14px;
+  color: getcolor(heading_color);
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_options_dropdown
+  ul
+  li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_options_dropdown
+  ul
+  li
+  > div {
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_container
+  .project_settings_inner_select_option {
+  padding: 11px 10px;
+  background-color: getcolor(button_background_color);
+  border-color: getcolor(button_border_color);
+  padding-right: 25px !important;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_container
+  .project_settings_inner_select_option
+  > span {
+  color: getcolor(button_text_color);
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_container
+  ul
+  li
+  > div:first-child {
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_view_website_container
+  ul
+  li {
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_terminal_dropdown_container
+  .project_setting_actions_terminal_button {
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 8px;
+  width: 60px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_terminal_dropdown_container
+  .project_setting_actions_terminal_button
+  img {
+  margin: 0;
+  margin-right: 20px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_terminal_dropdown_container
+  .project_setting_actions_terminal_dropdown_list {
+  position: absolute;
+  right: 0;
+  width: 120px;
+  box-shadow: 0 2px 13.8px 1.2px getcolor(list_box_shadow_color);
+  background-color: getcolor(menu_card_color);
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 250ms;
+  visibility: hidden;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_terminal_dropdown_container
+  .project_setting_actions_terminal_dropdown_list.show {
+  visibility: visible;
+  transform: scale(1);
+}
+/* Open terminal css for dropdown */
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_open_terminal_dropdown_icon {
+  width: 60px;
+  height: 40px;
+  margin-right: 10px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_open_terminal_dropdown_icon
+  > img:first-child {
+  width: 15px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_open_terminal_list_outer
+  li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_open_terminal_list_outer
+  li
+  > div:first-child {
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_terminal_container
+  > div {
+  width: 100px;
+  margin-right: 10px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_terminal_container
+  .project_settings_inner_select_option {
+  padding: 11px 10px;
+  background-color: getcolor(button_background_color);
+  border-color: getcolor(button_border_color);
+  padding-right: 25px !important;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_terminal_container
+  .project_settings_inner_select_option
+  > span {
+  color: getcolor(button_text_color);
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_terminal_container
+  ul
+  li
+  > div:first-child {
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_select_terminal_container
+  ul
+  li {
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons
+  img {
+  width: 14px;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_icons
+  span {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Gilroy-Medium';
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_icon_gap {
+  margin-right: 10px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_delete {
+  margin-right: 0;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_delete
+  img {
+  width: 15px;
+  margin: 0 auto;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_cert {
+  margin-right: 0;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_cert_disable {
+  cursor: not-allowed;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_cert_enable {
+  cursor: pointer;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_cert
+  img {
+  width: 15px;
+  margin: 0 auto;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_terminal {
+  margin-right: 0;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_setting_actions_terminal
+  img {
+  width: 15px;
+  margin: 0 auto;
+}
+.project_setting_dashboard
+  .project_setting_container
+  .project_setting_actions
+  .project_settings_terminal_dropdown_container {
+  margin-right: 10px;
+  position: relative;
+}
+
+/** heading section and buttons **/
+
+/** Project settings Tabs **/
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs {
+  margin-top: 50px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  li {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 12px 15px;
+  font-family: 'Gilroy-Regular';
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content {
+  overflow-y: overlay;
+  height: calc(100vh - 430px);
+  padding: 20px 40px 0 40px;
+}
+/** download files css start here **/
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content.project_settings_overflow {
+  height: auto !important;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_setting_tabs_download_files {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 40%;
+  margin: 0 auto;
+  height: 100%;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button {
+  // flex-direction: row;
+  width: 100%;
+  max-width: 100% !important;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_btn_wrapper {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_tab_title {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 35px;
+  color: getcolor(heading_color);
+  font-family: 'Gilroy-Regular';
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_no_file_title {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 0;
+  margin-top: 30px;
+  color: getcolor(heading_color);
+  font-family: 'Gilroy-Regular';
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_no_file_button {
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 30px;
+  min-width: 105px;
+  padding: 9px 8px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_no_file_button
+  > img {
+  width: 10px;
+  margin-right: 10px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_tab_description {
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 30px;
+  color: getcolor(sub_heading_color);
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_or_text {
+  margin: 0 35px;
+  color: getcolor(heading_color);
+  font-size: 12px;
+  line-height: 12px;
+  font-family: 'Gilroy-Medium';
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_or_text::before {
+  content: '';
+  position: absolute;
+  background: getcolor(radio_card_border_color);
+  left: 50%;
+  top: 0;
+  width: 1px;
+  bottom: 50%;
+  margin-bottom: 10px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_or_text::after {
+  content: '';
+  position: absolute;
+  background: getcolor(radio_card_border_color);
+  left: 50%;
+  bottom: 0;
+  width: 1px;
+  top: 50%;
+  margin-top: 10px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_btn_wrapper
+  > button {
+  font-size: 14px;
+  line-height: 14px;
+  min-width: 120px !important;
+  padding: 16px 10px;
+  font-family: 'Gilroy-Medium';
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .project_setting_file_btn_wrapper
+  > button
+  > img {
+  margin-right: 12px;
+  width: 13px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_section_tabs_content_file_button
+  .btn_space {
+  margin-left: 10px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_setting_tabs_download_files
+  .project_setting_tabs_download_files_title {
+  font-size: 18px;
+  line-height: 18px;
+  color: getcolor(heading_color);
+  margin: 25px 0;
+  font-family: 'Gilroy-Medium';
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_setting_tabs_download_files
+  .project_setting_tabs_download_files_info {
+  color: getcolor(text_color);
+  margin: 18px 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Gilroy-Regular';
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main.project_setting_tabs_download_files
+  .project_setting_tabs_download_files_icon
+  img {
+  width: 40%;
+}
+
+/** download files css start here **/
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content.project_settings_overflow {
+  height: auto !important;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: getcolor(scrollbar_roll_color);
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_settings_utilities_heading {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: 'Gilroy-Regular';
+  margin: 0;
+  margin-bottom: 30px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_settings_sync_heading {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: 'Gilroy-Bold';
+  margin: 0;
+  margin-bottom: 30px;
+  color: getcolor(project_setting_tab_heading_color);
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_tabs_content_website_settings.project_setting_tabs_content_main
+  li {
+  font-size: 14px;
+  line-height: 18px;
+  height: 40px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list {
+  font-size: 14px;
+  color: getcolor(project_setting_website_tab_text);
+  border-bottom: 1px solid getcolor(project_setting_website_list_border);
+  padding: 0 10px;
+  line-height: 15px;
+  position: relative;
+  height: 60px;
+  font-family: 'Gilroy-Regular';
+  margin: 0;
+  flex-wrap: nowrap;
+}
+/** changes 01 new **/
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_select_php_versions_options {
+  padding: 6px 12px 6px 12px;
+  width: 50px;
+  background-color: getcolor(select_box_background);
+  border-color: getcolor(button_border_color);
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_select_php_versions_options
+  span {
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_select_php_versions_options
+  > div {
+  right: 5px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_select_php_versions_options
+  > div
+  img {
+  width: 8px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_select_php_versions_options_list
+  ul
+  li {
+  padding: 6px 6px 6px 17px;
+  background-size: 6.5px;
+  background-position: center left 5px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_select_php_versions_options_list
+  ul
+  li
+  > div:first-child {
+  font-size: 14px;
+  line-height: 14px;
+}
+/*** ***/
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_col {
+  max-width: 22%;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_col_php_version {
+  display: flex;
+  align-items: center;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_php_version_outer
+  > div {
+  width: 80px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_settings_project_setting_php_version_list_outer
+  ul
+  li
+  > div {
+  font-size: 12px;
+  line-height: 12px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_php_version_list {
+  padding: 10px 0;
+  border: none;
+  font-size: 14px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_link {
+  color: getcolor(theme_color);
+  font-size: inherit;
+  line-height: inherit;
+  display: flex;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_link.project_settings_disable_link {
+  color: getcolor(disable_text_color);
+  font-style: italic;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_link
+  div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_link.project_settings_disable_link
+  div:hover {
+  text-decoration: none;
+  cursor: not-allowed;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_col_detail {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  display: flex;
+}
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  > div {
+  width: 100%;
+  padding: 0;
+}
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  > div
+  > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  .project_setting_input_col
+  > div:first-child {
+  width: 100%;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_col_detail
+  > div {
+  cursor: default;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_actions_copy_link_tooltip {
+  position: absolute;
+  right: 20px;
+  line-height: 0;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_actions_copy_link {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  .project_setting_public_modal_link_main
+  .project_setting_public_modal_link_icon
+  img {
+  width: 16px;
+}
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  .project_setting_input_col
+  .project_setting_cross
+  img {
+  width: 20px;
+  cursor: pointer;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  .project_setting_actions_copy_link
+  img {
+  margin: 0 auto;
+  display: block;
+  width: 10px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list:hover {
+  background-color: getcolor(project_setting_website_list_hover);
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_list
+  strong {
+  font-family: 'Gilroy-Bold';
+}
+
+/** Project settings Tab ends here  **/
+
+/** Sync settings tab css start here **/
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings {
+  margin-top: 25px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_text {
+  font-size: 14px;
+  line-height: 14px;
+  color: getcolor(sub_heading_color);
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings .border_left {
+    border-left: 1px solid getcolor(project_settings_divider_color);
+
+  }
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_text:last-child {
+  border-right: 0;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_button_col_space {
+  padding-left: 0;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .push_pull_col {
+  flex: 1;
+  text-align: right;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .push_pull_col
+  .switch_push_pull {
+  display: inline-flex;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .push_pull_col
+  .switch_push_pull
+  > div {
+  font-size: 14px;
+  line-height: 14px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_button_left {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10px 11px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_button_left
+  > img {
+  width: 10px;
+  margin-right: 0;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_button_right {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 7px 10px;
+  min-width: 55px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .project_setting_sync_file {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_checklist_checkbox {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_checklist_checkbox:nth-child(odd) {
+  // background-color: getcolor(tab_sync_col_background);
+  border-radius: 5px;
+}
+// .project_setting_dashboard
+//   .project_setting_inner_container
+//   .project_setting_tabs
+//   .project_setting_tabs_content
+//   .project_setting_tabs_content_clone_settings
+//   .sync_checklist_checkbox_file {
+//   padding-left: 5px;
+// }
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .checkbox_add_file_wrapper {
+  margin-bottom: 15px;
+  // padding-left: 5px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_checklist_checkbox_file
+  .checkbox_label
+  span {
+  font-family: 'Gilroy-Medium';
+  color: getcolor(heading_color);
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_checklist_checkbox_file
+  .col_border_right {
+  border-right: 1px solid getcolor(modal_divider_color);
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_checklist_checkbox_file
+  .col_project_settings_files_left {
+  padding-right: 4%;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings .expand_right{
+    float: right;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .sync_checklist_checkbox_file
+  .col_project_settings_files_right {
+  padding-left: 4%;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .Sync_checklist_outer {
+  height: calc(100vh - 627px);
+  overflow-y: overlay;
+  width: 100%;
+  flex: 1;
+}
+.project_setting_dashboard
+.project_setting_inner_container
+.project_setting_tabs
+.project_setting_tabs_content
+.project_setting_tabs_content_clone_settings
+.Sync_checklist_outer.full_overlay_screen{
+  height: calc(100vh - 100px);
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .padding_disable {
+  padding: 0;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .Sync_checklist_outer::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .Sync_checklist_outer::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .Sync_checklist_outer::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: getcolor(scrollbar_roll_color);
+}
+
+/** Sync settings tab css end here **/
+
+/** Utilities tabs start from here **/
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main {
+  margin-top: 25px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab
+  h4 {
+  font-size: 16px;
+  color: getcolor(project_setting_tab_heading_color);
+  line-height: 16px;
+  font-family: 'Gilroy-Bold';
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main_heading {
+  padding: 0 15px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab_grid {
+  margin: 0 -15px;
+  margin-bottom: 20px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utility_button {
+  border: none;
+  background: none;
+  padding: 12px 15px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_sync_modal_buttons
+  button:first-child
+  span {
+  color: getcolor(theme_color);
+}
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_sync_modal_buttons
+  button:first-child
+  span:hover {
+  text-decoration: underline;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_clone_setting_text_button:hover
+  span {
+  text-decoration: none;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utility_button
+  span {
+  font-size: 14px;
+  line-height: 14px;
+  color: getcolor(project_setting_tab_utilities_col_text_color);
+  font-family: 'Gilroy-Regular';
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utility_button
+  img {
+  width: 14px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utilities_tab_inner_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utilities_tab_col {
+  background-color: getcolor(project_setting_tab_utilities_col_bg);
+  border: 1px solid getcolor(project_setting_tab_utilities_col_border_color);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  color: getcolor(project_setting_tab_utilities_col_text_color);
+  margin-right: 0;
+}
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_public_modal_buttons
+  button {
+  padding: 12px 10px;
+  font-size: 14px;
+  line-height: 14px;
+  min-width: 80px;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_sync_modal_buttons
+  button {
+  padding: 12px 10px;
+  line-height: 14px;
+  font-size: 14px;
+  min-width: 100px;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_sync_modal_buttons
+  button:first-child {
+  min-width: auto;
+  margin-right: 40px !important;
+  padding: 0;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utilities_tab_col
+  button {
+  padding: 12px 15px;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utilities_tab_col
+  button:hover {
+  background-color: getcolor(project_setting_tab_utilities_button_hover);
+  box-shadow: 0 5px 13.8px 1.2px var(--color-card_box_shadow_color);
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utilities_tab_col
+  button:hover
+  span {
+  color: getcolor(project_setting_tab_utilities_button_hover_color);
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content.project_setting_tabs_content_main
+  .project_setting_utilities_tab
+  .project_setting_utilities_tab_col_main
+  .project_setting_utilities_tab_col.project_setting_utilities_tab_col_left {
+  margin-left: 0;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_utilities_tab.project_setting_tabs_content_main
+  .project_setting_utilities_tab_col_main
+  .project_setting_utilities_tab_col.project_setting_utilities_tab_col_right {
+  margin-right: 0;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_clone_setting_text_button {
+  padding: 0;
+  text-align: left;
+  cursor: default;
+  text-decoration: none;
+}
+
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_clone_setting_button {
+  font-size: 12px;
+  line-height: 12px;
+}
+.project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_main
+  .project_setting_clone_setting_button.project_setting_clone_setting_sync_now_button {
+  margin-left: 25px;
+}
+
+/** Clone Settings tabs ends here **/
+
+/** Project settings Tabs ends here  **/
+
+/** Modals  css **/
+
+/** Publick Link Modal **/
+
+.project_setting_dashboard .project_setting_public_modal {
+  background-color: getcolor(modal_background);
+  width: 100%;
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container {
+  padding: 0;
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_heading {
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+  line-height: 16px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid getcolor(modal_divider_color);
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  .project_setting_public_modal_link_main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  .project_setting_public_modal_link_main
+  .project_setting_public_modal_link_icon {
+  margin-right: 10px;
+  background-color: getcolor(create_link_icon_bg);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  p {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 22px;
+  color: getcolor(modal_text_color);
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  .project_setting_public_modal_copy_link {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  margin-left: 5px;
+}
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  .project_setting_public_modal_copy_link_copied:hover
+  span {
+  text-decoration: none;
+}
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  .project_setting_public_modal_text {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(sub_heading_color);
+}
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_container
+  .project_setting_modal_content
+  .project_setting_public_modal_create_link {
+  min-width: 120px;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 12px 0;
+}
+
+.project_setting_dashboard
+  .project_setting_public_modal
+  .project_setting_public_modal_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row-reverse;
+  border-top: 1px solid getcolor(modal_divider_color);
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+/** Publick Link Modal ends  **/
+
+/** Sync Modal css start from here  **/
+
+.project_setting_dashboard .project_setting_sync_modal {
+  background-color: getcolor(modal_background);
+  width: 100%;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container {
+  padding: 0;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_heading {
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  border-bottom: 1px solid getcolor(modal_divider_color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 22px;
+  color: getcolor(modal_text_color);
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  .project_setting_input {
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+}
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  .project_setting_input
+  label {
+  background-color: getcolor(modal_input_label_color);
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  .project_setting_input
+  input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 16px;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  .project_setting_input_col
+  .project_setting_arrow_right {
+  width: 38px;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_container
+  .project_setting_modal_content_input_row
+  .project_setting_input_col
+  .project_setting_cross {
+  width: 38px;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.project_setting_dashboard
+  .project_setting_sync_modal
+  .project_setting_sync_modal_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+/** Sync Modal css end here **/
+/**Bottom Notification Dropdown **/
+.project_setting_dashboard  .project_settings_dropdown_attach_options_outer  {
+  display: inline-flex;
+}
+.project_setting_dashboard .project_settings_dropdown_attach_options_outer .project_settings_dropdown_attach_options {
+  padding: 0;
+  background: none;
+  border: none;
+  justify-content: space-between;
+}
+.project_setting_dashboard .project_settings_dropdown_attach_options_outer > div {
+  width: 100px;
+}
+.project_setting_dashboard .project_settings_dropdown_attach_options_outer .project_settings_dropdown_attach_options > div{
+  right: 0
+}
+.project_setting_dashboard .project_settings_dropdown_attach_options_outer .project_settings_dropdown_attach_options > span{
+   font-size: 12px;
+  line-height: 12px;
+  color: getcolor(theme_color);
+  font-family: 'Gilroy-Medium';
+}
+
+.project_setting_dashboard .project_settings_dropdown_attach_options_outer  .project_settings_dropdown_attach_options_dropdown{
+  bottom: calc(100% + 5px );
+  top: unset;
+  width: 150px;
+  box-shadow: 0px 10px 15px getcolor(list_box_shadow_color);
+}
+.project_setting_dashboard .project_settings_dropdown_attach_options_outer .project_settings_dropdown_attach_options_dropdown .project_settings_attach_options_dropdown_list ul li{
+  padding: 8px 15px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.project_setting_dashboard .project_settings_dropdown_attach_options_outer .project_settings_dropdown_attach_options_dropdown .project_settings_attach_options_dropdown_list ul li > div{
+  font-size: 12px;
+  line-height: 12px;
+}
+.project_setting_dashboard .project_settings_text_button{
+  padding: 0;
+  min-width: auto;
+  margin-right: 15px;
+}
+/** Modals css end **/
+
+/** Responsive css start from here **/
+
+@media only screen and (max-width: 1600px) {
+  .project_setting_dashboard .project_setting_go_to_extention {
+    padding: 10px 15px;
+    height: 50px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions {
+    margin-top: 30px;
+  }
+  .project_setting_dashboard .project_setting_go_to_extention p {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options {
+    padding: 10px 30px 10px 10px;
+    min-width: 140px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options
+    span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options_dropdown
+    ul
+    li
+    > div {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_go_to_extention
+    .project_setting_extention_button
+    span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_heading {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+  .project_setting_dashboard .project_setting_container .project_setting_info {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_info_top_description {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_col {
+    display: flex;
+    align-items: center;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons {
+    padding: 10px 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons.project_setting_actions_start_icon {
+    min-width: 100px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons.project_setting_action_view_site {
+    min-width: 120px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons.project_setting_action_public_link {
+    min-width: 110px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_terminal_dropdown_container
+    .project_setting_actions_terminal_button {
+    width: 55px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons
+    img {
+    width: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons
+    span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    .project_settings_inner_select_option {
+    padding: 10px 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    .project_settings_inner_select_option
+    > span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    ul
+    li {
+    padding: 10px 20px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    ul
+    li
+    > div:first-child {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_delete {
+    height: 34px;
+    width: 34px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_delete
+    img {
+    width: 13px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_cert {
+    height: 34px;
+    width: 34px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_cert
+    img {
+    width: 13px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_terminal {
+    height: 34px;
+    width: 34px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_terminal
+    img {
+    width: 13px;
+  }
+
+  /** Project settings Tabs **/
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs {
+    margin-top: 30px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab
+    h4 {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 18px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utilities_tab_col {
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_public_modal_buttons
+    button {
+    padding: 10px 8px;
+    line-height: 12px;
+    font-size: 12px;
+    min-width: 70px;
+  }
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_sync_modal_buttons
+    button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px 8px;
+    min-width: 85px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_sync_modal_buttons
+    button:first-child {
+    margin-right: 25px !important;
+    padding: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utilities_tab_col
+    button {
+    padding: 12px 15px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab_grid {
+    margin-bottom: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main {
+    margin-bottom: 25px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_info_outer
+    .project_setting_click_here
+    img {
+    width: 10px;
+    margin-right: 8px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_link_main
+    .project_setting_public_modal_link_icon
+    img {
+    width: 14px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utilities_tab_inner_row
+    img {
+    width: 12px !important;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_grid_row {
+    margin-top: 15px;
+  }
+
+  /** Clone Settings tabs start from **/
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_clone_setting_text_button.project_setting_clone_setting_button {
+    padding: 0 15px 0 0;
+    text-align: left;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_clone_setting_button {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 6px 12px;
+    min-width: auto;
+    border-radius: 3px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_clone_setting_button.project_setting_clone_setting_sync_now_button {
+    margin-left: 20px;
+  }
+
+  /** Clone Settings tabs ends here **/
+
+  /** Utilities tabs start from here **/
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utility_button {
+    padding: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_link_main
+    .project_setting_public_modal_create_link
+    span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utility_button
+    span {
+    font-size: 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utility_button
+    img {
+    width: 13px;
+  }
+
+  /** Utilities tabs end here **/
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings {
+    margin-top: 20px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_left {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_left
+    > img {
+    width: 6px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_left.button_icon
+    img {
+    width: 10px;
+    margin: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_right {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 10px;
+    // min-width: 55px;
+    // margin-left: 10px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .project_setting_sync_file {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .Sync_checklist_outer {
+    height: calc(100vh - 550px);
+  }
+
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings {
+    margin-top: 20px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_left {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 7px 8px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_left
+    > img {
+    width: 8px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_right {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 10px;
+    // min-width: 55px;
+    // margin-left: 10px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .project_setting_sync_file {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  /** Sync settings tab css end here **/
+  /** Project settings Tabs ends here  **/
+  /** Sync settings tab css end here **/
+  /** Project settings Tabs ends here  **/
+
+  /** modal css **/
+
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_modal_content_input_row {
+    margin: 25px 0;
+  }
+
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_modal_content {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_heading {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 25px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_heading {
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_create_link {
+    min-width: 100px;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_copy_link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_link_main
+    .project_setting_public_modal_create_link {
+    min-width: auto;
+    padding: 3px 13px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_settings_utilities_heading {
+    margin-bottom: 25px;
+  }
+  // .project_setting_dashboard
+  // .project_setting_inner_container
+  // .project_setting_tabs
+  // .project_setting_tabs_content
+  //   .project_settings_sync_heading {
+  //   margin-bottom: 25px;
+  // }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .project_setting_sync_file {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content {
+    height: calc(100vh - 370px);
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_terminal_open {
+    height: calc(100vh - 490px);
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list {
+    font-size: 13px;
+    padding: 0 5px;
+    line-height: 14px;
+    height: 50px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_link_main
+    .project_setting_public_modal_link_icon {
+    margin-right: 10px;
+    background-color: getcolor(create_link_icon_bg);
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_public_modal_buttons {
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_modal_content_input_row
+    .project_setting_input
+    input {
+    font-size: 12px;
+    padding: 12px 16px;
+    padding-right: 25px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main {
+    margin-top: 20px;
+  }
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings {
+    margin-top: 20px;
+  }
+  /** Sync settings tab css start here **/
+
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings {
+    margin-top: 20px;
+  }
+  /** Sync settings tab css start here **/
+  /** modal css **/
+  /* Open terminal css for dropdown */
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_open_terminal_dropdown_icon {
+    width: 55px;
+    height: 34px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_open_terminal_dropdown_icon
+    > img:first-child {
+    width: 13px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_open_terminal_list_outer
+    li
+    > div:first-child {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_select_php_versions_options_list
+    ul
+    li
+    > div:first-child {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_select_php_versions_options
+    span {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  /** download files css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files {
+    max-width: 33%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files
+    .project_setting_tabs_download_files_title {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 20px 0;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files
+    .project_setting_tabs_download_files_info {
+    margin: 15px 0;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files
+    .project_setting_tabs_download_files_icon
+    img {
+    width: 33%;
+  }
+  .project_setting_dashboard .project_settings_dropdown_attach_options .project_settings_dropdown_attach_options_dropdown{
+    width: 150px;
+  }
+  /** download files css start here **/
+}
+
+@media only screen and (max-width: 1399px) {
+  .project_setting_dashboard .project_settings_sync_bar .project_settings_tab_sync_content .project_settings_tab_sync_text{
+    font-size: 10px;
+    line-height: 10px;
+
+  }
+
+  .project_setting_dashboard .project_settings_sync_bar .project_settings_tab_sync_button{
+    font-size: 10px;
+    line-height: 10x;
+    padding: 6px 10px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_bottom_notification
+    > div:first-child {
+    padding: 9px 5px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_select_php_versions_options {
+    width: 45px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_select_php_versions_options_list
+    ul
+    li {
+    padding: 5px 5px 5px 16px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_select_php_versions_options
+    > div
+    img {
+    width: 6px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_bottom_notification
+    .project_setting_bottom_notification_content
+    img {
+    width: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options {
+    padding: 9px 25px 9px 10px;
+    min-width: 120px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options
+    span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_view_website_options_dropdown
+    ul
+    li
+    > div {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_bottom_notification
+    .project_setting_bottom_notification_content
+    .project_setting_bottom_notification_title {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions {
+    margin-top: 25px;
+  }
+  .project_setting_dashboard .project_setting_go_to_extention {
+    padding: 10px 15px;
+    height: 40px;
+  }
+  .project_setting_dashboard .project_setting_go_to_extention p {
+    font-size: 11px;
+    line-height: 11px;
+    margin-bottom: 0;
+  }
+
+  .project_setting_dashboard
+    .project_setting_go_to_extention
+    .project_setting_extention_button
+    span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_heading {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .project_setting_dashboard .project_setting_container .project_setting_info {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_info_top_description {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_col {
+    display: flex;
+    align-items: center;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons {
+    margin-right: 10px;
+    padding: 9px 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons.project_setting_actions_start_icon {
+    min-width: 85px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons.project_setting_action_view_site {
+    min-width: 100px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons.project_setting_action_public_link {
+    min-width: 90px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_terminal_dropdown_container
+    .project_setting_actions_terminal_button {
+    width: 50px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons
+    img {
+    width: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_icons
+    span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    .project_settings_inner_select_option {
+    padding: 9px 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    .project_settings_inner_select_option
+    > span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    ul
+    li {
+    padding: 9px 20px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_select_terminal_container
+    ul
+    li
+    > div:first-child {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_delete {
+    height: 30px;
+    width: 30px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_delete
+    img {
+    width: 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_cert {
+    height: 30px;
+    width: 30px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_cert
+    img {
+    width: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_terminal {
+    height: 30px;
+    width: 30px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_setting_actions_terminal
+    img {
+    width: 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_php_version_outer
+    > div {
+    width: 40px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_project_setting_php_version_list_outer
+    ul
+    li
+    > div {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_php_version_list {
+    padding: 5px 0;
+    border: none;
+    font-size: 12px;
+  }
+
+  /** Project settings Tabs **/
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_settings_sync_heading {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_settings_sync_heading {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .project_setting_dashboard .project_setting_container {
+    padding: 0 30px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs {
+    margin-top: 30px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content {
+    padding: 15px 30px 0 30px;
+    height: calc(100vh - 315px);
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_terminal_open {
+    padding: 15px 30px 0 30px;
+    height: calc(100vh - 415px);
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main {
+    margin-top: 15px;
+  }
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings {
+    margin-top: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_section_tabs_content_file_button
+    .project_setting_file_tab_title {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 30px;
+    color: getcolor(heading_color);
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_section_tabs_content_file_button
+    .project_setting_no_file_button {
+    font-size: 12px;
+    line-height: 12px;
+    min-width: 95px;
+    padding: 10px 5px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_section_tabs_content_file_button
+    .project_setting_no_file_button
+    > img {
+    width: 8px;
+    margin-right: 8px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_section_tabs_content_file_button
+    .project_setting_file_tab_description {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 25px;
+  }
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings {
+    margin-top: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_section_tabs_content_file_button
+    .project_setting_file_btn_wrapper
+    > button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 15px 8px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_section_tabs_content_file_button
+    .project_setting_file_btn_wrapper
+    > button
+    > img {
+    width: 12px;
+  }
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    li {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 12px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_actions_copy_link
+    img {
+    width: 8px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_website_settings.project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_actions_copy_link
+    img {
+    margin: 0 auto;
+    display: block;
+    width: 8px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab
+    h4 {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 18px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utilities_tab_col {
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 11px;
+    margin-right: 0;
+  }
+
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_sync_modal_buttons
+    button:first-child {
+    margin-right: 20px !important;
+    padding: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utilities_tab_col
+    button {
+    padding: 8px 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main_heading {
+    padding: 0 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab_grid {
+    margin: 0 -10px;
+    margin-bottom: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utilities_tab_inner_row
+    img {
+    width: 12px !important;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_grid_row {
+    margin-top: 15px;
+  }
+
+  /** Clone Settings tabs start from **/
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_clone_setting_text_button.project_setting_clone_setting_button {
+    padding: 0 15px 0 0;
+    text-align: left;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_clone_setting_button {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 6px 12px;
+    min-width: auto;
+    border-radius: 3px;
+  }
+
+  /** Clone Settings tabs ends here **/
+
+  /** Utilities tabs start from here **/
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utility_button {
+    padding: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utility_button
+    span {
+    font-size: 11px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_utilities_tab.project_setting_tabs_content_main
+    .project_setting_utilities_tab_col_main
+    .project_setting_utility_button
+    img {
+    width: 12px;
+  }
+
+  /** Utilities tabs end here **/
+
+  /** Sync settings tab css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings {
+    margin-top: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_text {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .push_pull_col
+    .switch_push_pull
+    > div {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_left {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 6px 7px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .sync_button_right {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 6px 10px;
+    // min-width: 55px;
+    // margin-left: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .project_setting_sync_file {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .Sync_checklist_outer {
+    height: calc(100vh - 512px);
+  }
+
+  /** Sync settings tab css end here **/
+  /** Project settings Tabs ends here  **/
+
+  /** modal css **/
+
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_divider {
+    margin: 15px 0 20px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_modal_content_input_row {
+    margin: 20px 0;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_actions_copy_link_tooltip {
+    right: 15px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_actions_copy_link {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_open_terminal_dropdown_icon {
+    width: 50px;
+    height: 30px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_open_terminal_dropdown_icon
+    > img:first-child {
+    width: 12px;
+  }
+  .project_setting_dashboard
+    .project_setting_container
+    .project_setting_actions
+    .project_settings_open_terminal_list_outer
+    li
+    > div:first-child {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  /** download files css start here **/
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files {
+    max-width: 30.2%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files
+    .project_setting_tabs_download_files_title {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 15px 0;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files
+    .project_setting_tabs_download_files_info {
+    margin: 10px 0;
+  }
+
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main.project_setting_tabs_download_files
+    .project_setting_tabs_download_files_icon
+    img {
+    width: 21.5%;
+  }
+  .project_setting_dashboard .project_setting_bottom_terminal {
+    height: 100px;
+  }
+  .project_setting_dashboard
+    .website_setting_outer
+    .project_settings_list_beta {
+    font-size: 8px;
+    line-height: 8px;
+  }
+  .project_setting_dashboard .project_settings_dropdown_attach_options .project_settings_dropdown_attach_options_dropdown{
+    width: 130px;
+  }
+  /** download files css start here **/
+  // .project_setting_dashboard .project_settings_dropdown_attach_options button {
+  //   min-width: 110px;
+  //   font-size: 10px;
+  //   line-height: 10px;
+  // }
+}
+@media only screen and (max-width: 1299px) {
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list {
+    height: 45px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_link_main
+    .project_setting_public_modal_link_icon {
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_link_main
+    .project_setting_public_modal_link_icon
+    img {
+    width: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_text {
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_copy_link {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_public_modal_buttons
+    button {
+    padding: 7px 8px;
+    min-width: 65px;
+    font-size: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_modal_content
+    .project_setting_public_modal_create_link {
+    min-width: 90px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 8px;
+  }
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_container
+    .project_setting_heading {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .project_setting_dashboard
+    .project_setting_public_modal
+    .project_setting_public_modal_buttons {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_select_php_versions_options
+    span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_settings_select_php_versions_options_list
+    ul
+    li
+    > div:first-child {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    li {
+    font-size: 11px;
+    line-height: 11px;
+    padding: 9px 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list {
+    font-size: 11px;
+    line-height: 12px;
+    position: relative;
+    height: 40px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_settings_utilities_heading {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 20px;
+  }
+  //   .project_setting_dashboard
+  //   .project_setting_inner_container
+  //   .project_setting_tabs
+  //   .project_setting_tabs_content
+  //   .project_settings_sync_heading {
+  //   font-size: 12px;
+  //   line-height: 12px;
+  //   // margin-bottom: 20px;
+  // }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_clone_settings
+    .project_setting_sync_file {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  // .project_setting_dashboard .project_setting_sync_modal .project_setting_container .project_setting_heading {
+  //   font-size: 12px;
+  //   line-height: 12px;
+  // }
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_heading {
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_sync_modal_buttons
+    button {
+    padding: 6px 8px;
+    min-width: 65px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project_setting_dashboard
+    .project_setting_sync_modal
+    .project_setting_container
+    .project_setting_modal_content {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .project_setting_dashboard
+  .project_setting_inner_container
+  .project_setting_tabs
+  .project_setting_tabs_content
+  .project_setting_tabs_content_clone_settings
+  .Sync_checklist_outer {
+  height: calc(100vh - 465px);
+}
+
+}
+@media only screen and (min-width: 1500px) and (max-width: 1550px) and (max-height: 810px) {
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list {
+    height: 45px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_actions_copy_link {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1440px) and (max-height: 800px) {
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list {
+    height: 42px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_actions_copy_link {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1299px) and (max-height: 700px) {
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list {
+    height: 38px;
+  }
+  .project_setting_dashboard
+    .project_setting_inner_container
+    .project_setting_tabs
+    .project_setting_tabs_content
+    .project_setting_tabs_content_main
+    .project_setting_list
+    .project_setting_actions_copy_link {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/** Responsive css ends here **/

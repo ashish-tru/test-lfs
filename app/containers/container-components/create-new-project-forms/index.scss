@@ -1,0 +1,2666 @@
+@import '../../../global.scss';
+
+.create_new_project_select_dropdown {
+  margin-bottom: 20px;
+}
+
+.select_list_outer > div {
+  max-height: 160px;
+}
+
+.create_new_project_heading {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(heading_color);
+  text-align: center;
+}
+
+.create_new_project_steps {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(sub_heading_color);
+  border-bottom: 1px solid getcolor(divider_color);
+}
+
+.create_new_project_form_list .create_new_project_grid {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.create_new_project_section_website_clone_title {
+  font-size: 18px;
+  line-height: 18px;
+  color: getcolor(heading_color);
+  text-align: center;
+  // margin-bottom: 60px;
+  // border-bottom: 1px solid var(--color-divider_color);
+  // padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.create_new_project_website_clone_step_two
+  .create_new_project_section_website_clone_title {
+  margin-bottom: 0px;
+}
+
+
+  .create_new_project_website_clone_step_two
+  .create_new_project_select_cms_container_website_clone {
+  margin-bottom: 60px;
+}
+
+.create_new_project_website_clone_title {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.create_new_project_wrapper_content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_project_add_ssh_key {
+  display: flex;
+  align-items: center;
+  color: getcolor(theme_color);
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 15px;
+}
+
+.create_new_project_wrapper_content .create_new_project_project_add_ssh_key {
+  margin-top: 0px !important;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_three
+  .create_new_project_project_add_ssh_key_outer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+//
+//
+//   .create_new_project_website_clone_container
+//   .create_new_project_website_clone_step_three
+//   .create_new_project_project_add_ssh_key {
+//    margin-top: 0;
+
+//  }
+
+//
+//
+// .create_new_project_website_clone_container
+// .create_new_project_website_clone_step_two
+//  .create_new_project_project_add_ssh_key {
+//  margin-top: 0;
+
+//  }
+
+.create_new_project_website_clone_container
+  .create_new_project_project_add_ssh_key
+  .create_new_project_project_add_ssh_key_icon
+  img {
+  width: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.create_new_project_form_list .create_new_project_grid > div {
+  padding: 0 5px;
+}
+
+  .create_new_project_grid_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 18px;
+}
+  .create_new_project_grid_card
+  .create_new_project_grid_card_title {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(heading_color);
+}
+  .create_new_project_grid_card.create_new_project_coming_soon {
+  position: relative;
+}
+
+  .create_new_project_grid_card.create_new_project_coming_soon
+  .create_new_project_grid_card_title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  // color: getcolor(text_disable_color);
+}
+
+  .create_new_project_grid_card.create_new_project_coming_soon
+  .create_new_project_coming_soon_text {
+  font-size: 8px;
+  line-height: 8px;
+  color: getcolor(heading_color);
+  text-transform: uppercase;
+  font-family: 'Gilroy-Bold';
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  padding: 5px 6px;
+  min-width: 55px;
+  border-radius: 4px;
+  border: 1px solid getcolor(radio_card_border_color);
+  background-color: getcolor(radio_card_background_color);
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms_container_inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_github_url
+  img {
+  width: 25px;
+  flex-shrink: 0;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_icon
+  img {
+  width: 35px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_website_clone_icon
+  img {
+  width: 70px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .enter_ok_btn
+  img {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_clone_from_github
+  .create_new_project_clone_github_icon
+  img {
+  width: 70px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_clone_from_github
+  .account_login_button
+  img {
+  width: 15px;
+  margin-left: 15px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .login_success_msg_container
+  img {
+  width: 14px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.create_new_project_website_clone_container
+  .login_success_msg_container
+  .ssh_key_form_error
+  img {
+  width: 14px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .enter_ok_btn
+  img {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_select_new
+  .grid_card_icon
+  img {
+  width: 18px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .press_enter_container
+  .enter_icon
+  img {
+  width: 8px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .press_enter_container
+  .enter_icon
+  img {
+  width: 8px;
+}
+
+  .create_new_project_grid_card
+  .grid_card_icon
+  img {
+  width: 18px;
+}
+
+ .create_new_project_project_detail_form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+
+  .create_new_project_website_clone_step_two
+  .create_new_project_project_detail_form {
+  margin-top: 60px;
+}
+
+ .create_new_project_project_detail_full_form {
+  width: 100%;
+  margin-top: 60px;
+}
+
+
+  .create_new_project_website_clone_step_three
+  .create_new_project_project_detail_form
+  .create_new_project_auto_fetch_skip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+  .create_new_project_website_clone_step_three
+  .create_new_project_project_detail_form
+  .create_new_project_database_button {
+  min-width: 120px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 11px 0;
+}
+
+
+  .create_new_project_website_clone_step_three
+  .create_new_project_project_detail_form
+  .create_new_project_database_button
+  img {
+  width: 14px;
+}
+
+
+  .create_new_project_website_clone_step_three
+  .create_new_project_project_detail_form
+  .create_new_project_database_button
+  img {
+  width: 14px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_detail_form {
+  margin-top: 0;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card {
+  padding: 35px 45px;
+  text-align: left;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card:hover {
+  background-color: getcolor(radio_card_background_color);
+  box-shadow: none;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card:hover {
+  background-color: getcolor(radio_card_background_color);
+  box-shadow: none;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_divider {
+  height: 1px;
+  border-bottom: 1px solid getcolor(input_border_color);
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card.create_new_project_project_download_info {
+  padding: 25px 45px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card.create_new_project_project_download_info
+  .create_new_project_project_download_info_title {
+  color: getcolor(heading_color);
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card.create_new_project_project_download_info
+  .create_new_project_project_download_info_title
+  span {
+  color: getcolor(text_color);
+  margin-left: 20px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_content {
+  margin-left: 28px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_header
+  .create_new_project_project_info_icon {
+  margin-right: 10px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_header
+  .create_new_project_project_info_icon
+  img {
+  width: 18px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_header
+  .create_new_project_project_info_header_title {
+  font-size: 22px;
+  line-height: 22px;
+  color: getcolor(heading_color);
+  font-family: 'Gilroy-Medium';
+  margin: 0;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_content
+  p {
+  color: getcolor(text_color);
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Gilroy-Regular';
+  margin-bottom: 15px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_step_four
+  .create_new_project_project_info_card
+  .create_new_project_project_info_content
+  p:last-child {
+  margin-bottom: 0;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_input {
+  margin-bottom: 25px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_input_server_info {
+  margin-bottom: 20px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_detail_textarea
+  textarea {
+  height: 160px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_location_browse {
+  position: relative;
+  margin-top: 25px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_location_browse
+  input {
+  padding-right: 100px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_location_browse
+  input:disabled {
+  opacity: 1;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_location_browse
+  input {
+  color: var(--color-text_color);
+  border: 1px solid var(--color-input_color_border);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 19.5px 16px;
+  background: transparent;
+  width: 100%;
+  margin: 0;
+  color: transparent;
+  text-shadow: 0 0 0 getcolor(text_color);
+  padding-right: 90px;
+}
+
+
+  .create_new_project_project_detail_full_form
+  .create_new_project_project_location_browse {
+  margin-top: 0px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_location_browse
+  input:disabled {
+  opacity: 1;
+}
+
+//
+//
+//
+//   .create_new_project_project_detail_form
+//   .create_new_project_project_location_browse
+//   input:focus {
+//   outline: none;
+// }
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_location_browse
+  .create_new_project_project_location_browse_button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 13px 0;
+  min-width: 80px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_ssh_outer {
+  position: relative;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_textarea
+  > div {
+  display: flex;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_textarea
+  textarea {
+  font-size: 16px;
+  line-height: 18px;
+  color: transparent;
+  text-shadow: 0 0 0 getcolor(text_color);
+  padding: 25px;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_textarea
+  textarea:focus {
+  outline: none;
+  border-color: getcolor(input_border_color);
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_textarea
+  textarea::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_textarea
+  textarea::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_textarea
+  textarea::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: getcolor(scrollbar_roll_color);
+}
+
+
+  .create_new_project_project_detail_form
+  .create_new_project_project_copy_ssh_outer
+  .create_new_project_project_copy_ssh_key {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+
+  .create_new_project_project_copy_ssh_key
+  .create_new_project_project_copy_ssh_key_button {
+  padding: 0;
+  width: 38px;
+  height: 38px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_project_change_ssh_key_button {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 11px 0;
+  min-width: 150px;
+  margin-left: 10px;
+}
+
+
+  .create_new_project_project_copy_ssh_key
+  .create_new_project_project_copy_ssh_key_button
+  img {
+  padding: 0;
+  width: 12px;
+  margin: 0;
+}
+
+.create_new_project_buttons_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1px solid getcolor(divider_color);
+  background-color: getcolor(dashboard_background);
+}
+
+.create_new_project_buttons_container .create_new_project_button_cancel {
+  padding: 0 10px;
+  font-size: 14px;
+  min-height: 40px;
+  min-width: 90px;
+}
+
+.create_new_project_buttons_container .create_new_project_button_continue {
+  padding: 0 10px;
+  font-size: 14px;
+  min-height: 40px;
+  min-width: 120px;
+}
+
+.create_new_project_buttons_container .create_new_project_button_continue img {
+  width: 14px;
+  margin-right: 10px;
+}
+
+.create_new_project_buttons_container
+  .create_new_project_button_continue.create_new_project_skip_button {
+  padding: 0 !important;
+  margin-right: 15px;
+  height: auto !important;
+  min-height: 0;
+  min-width: auto !important;
+}
+.create_new_project_select_cms_container {
+  display: flex;
+  flex-direction: row;
+}
+.visibility_hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(60px);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.visibility_on {
+  transform: translateX(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+  transition-delay: 0.1s;
+  visibility: visible;
+  opacity: 1;
+}
+.slide_prev {
+  transform: translateX(-60px);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.create_new_project_select_cms_container .create_new_project_select_cms {
+  flex: 1;
+  min-width: 0;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_github_url {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding: 14px 20px;
+  cursor: default;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_github_url:hover {
+  box-shadow: none;
+  background-color: getcolor(radio_card_background_color);
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_github_url
+  .card_separator {
+  border-right: 1px solid getcolor(divider_color);
+  height: 40px;
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_github_url
+  p {
+  font-size: 16px;
+  line-height: 18px;
+  color: getcolor(heading_color);
+  font-family: 'Gilroy-Regular';
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_github_url
+  p
+  strong {
+  font-family: 'Gilroy-Bold';
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_card {
+  position: relative;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_card
+  .create_new_project_select_cms_card_coming_soon {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  width: 105px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: 'Gilroy-Bold';
+  padding: 8px;
+  border-radius: 3px;
+  color: getcolor(sub_heading_color);
+  border: 1px solid getcolor(radio_card_border_color);
+  transform: translateX(-50%);
+  background-color: getcolor(radio_card_background_color);
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_card.hovered
+  .create_new_project_select_cms_card_checkbox {
+  display: none;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_card.hovered:hover
+  .create_new_project_select_cms_card_checkbox {
+  display: block;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_card.selected {
+  display: block;
+}
+
+.create_new_project_select_cms_container .create_new_project_select_cms h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Gilroy-Regular';
+  margin: 0;
+  text-align: center;
+  color: getcolor(heading_color);
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_icon {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.create_new_project_select_cms_container .create_new_project_select_cms h3 {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  font-family: 'Gilroy-Regular';
+  margin-bottom: 20px;
+  color: getcolor(heading_color);
+}
+
+.create_new_project_select_cms_container
+  .create_new_project_select_cms
+  .create_new_project_select_cms_card.disable
+  h3 {
+  color: getcolor(text_disable_color);
+}
+
+ .create_new_project_cms_setting_form_container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  h2 {
+  font-size: 16px;
+  line-height: 16px;
+  color: getcolor(heading_color);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_clone_from_github
+  h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: getcolor(heading_color);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+  .create_new_project_cms_setting_form_container
+  .create_new_project_cms_setting_form
+  h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(heading_color);
+  margin: 20px 0 75px 0;
+  text-align: center;
+}
+
+
+  .create_new_project_cms_setting_form_container
+  .create_new_project_cms_setting_form
+  .create_new_project_project_input {
+  margin-bottom: 35px;
+}
+
+
+  .create_new_project_cms_setting_form_container
+  .create_new_project_cms_setting_form
+  .create_new_project_cms_setting_form_select {
+  border-color: getcolor(input_color_border);
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .create_new_project_clone_select
+  > span {
+  color: getcolor(heading_color);
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .login_success_msg_container
+  span {
+  color: #009e62;
+  font-family: 'Gilroy-Regular';
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.create_new_project_website_clone_container .ssh_key_form_error span {
+  color: #d7322d;
+  font-family: 'Gilroy-Regular';
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.create_new_project_website_clone_container .ssh_key_form_error span {
+  color: #d7322d;
+  font-family: 'Gilroy-Regular';
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .github_go_to_setting_link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  width: max-content;
+  cursor: pointer;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .github_go_to_setting_link:hover
+  > span {
+  text-decoration: underline;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .github_go_to_setting_link
+  > span {
+  font-size: 14px;
+  line-height: 14px;
+  color: #2477f3;
+  font-family: 'Gilroy-Regular';
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .github_go_to_setting_link
+  .github_go_to_setting_link_icon {
+  margin-right: 10px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .github_go_to_setting_link
+  .github_go_to_setting_link_icon
+  > img {
+  width: 14px;
+}
+
+.create_new_project_select_github_branch_container
+  .create_new_project_select_github_branch
+  .create_new_project_select_branch
+  > span {
+  color: getcolor(heading_color);
+}
+
+
+  .create_new_project_cms_setting_form_container
+  .create_new_project_cms_setting_form
+  .create_new_project_cms_setting_form_select
+  span {
+  color: getcolor(heading_color);
+}
+
+.create_new_project_website_clone_container {
+  flex: 1;
+  min-width: 0;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 36%;
+  margin: 0 auto;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_website_clone_icon {
+  margin: 50px 0 30px 0;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_clone_help {
+  width: 10px;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_select_new {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 18px;
+  align-items: center;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_select_new
+  h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: getcolor(heading_color);
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_or_divider {
+  overflow: hidden;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: getcolor(heading_color);
+  font-family: 'Gilroy-Medium';
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_or_divider::before,
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_or_divider::after {
+  background-color: getcolor(divider_color);
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_or_divider::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_website_clone_options
+  .create_new_project_or_divider::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .enter_ok_btn {
+  font-size: 14px;
+  line-height: 14px;
+  min-width: 70px;
+  padding: 7px;
+  font-family: 'Gilroy-Medium';
+  display: inline-flex;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .press_enter_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .press_enter_container
+  .create_new_project_token_enter_info {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(sub_heading_color);
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .press_enter_container
+  .create_new_project_token_enter_info
+  strong {
+  font-family: 'Gilroy-Bold';
+  color: getcolor(heading_color);
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .press_enter_container
+  .create_new_project_token_enter_info
+  strong {
+  font-family: 'Gilroy-Bold';
+  color: getcolor(heading_color);
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .press_enter_container
+  .create_new_project_token_enter_info.disable_text {
+  color: getcolor(tag_disable_text_color);
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .press_enter_container
+  .create_new_project_token_enter_info.disable_text
+  strong {
+  color: getcolor(tag_disable_text_color);
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .create_new_project_name_input {
+  margin-top: 35px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .create_new_project_clone_select {
+  border-color: getcolor(input_color_border);
+  margin-top: 35px;
+}
+
+.create_new_project_website_clone_container
+  .create_new_project_token_enter_form
+  .create_new_project_tag_option_list {
+  --gap: 10px;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+  margin-top: 5px;
+}
+
+.create_new_project_clone_from_github_container {
+  flex: 1;
+  min-width: 0;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_clone_from_github {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_clone_from_github
+  .account_login_button {
+  height: 40px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0 12%;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 140px;
+  position: relative;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .login_success_msg_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 158, 98, 0.2);
+  padding: 12px 15px;
+  background-color: rgba(0, 158, 98, 0.1);
+}
+
+.create_new_project_website_clone_container .ssh_key_form_error {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgba(215, 50, 45, 0.25);
+  background-color: rgba(215, 50, 45, 0.07);
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .git_hub_url_error {
+  top: -80px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .git_hub_url_error
+  .git_hub_url_error_sing_in_different {
+  font-family: 'Gilroy-Medium';
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .enter_ok_btn {
+  font-size: 14px;
+  line-height: 14px;
+  min-width: 70px;
+  padding: 7px;
+  font-family: 'Gilroy-Medium';
+  display: inline-flex;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .press_enter_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .press_enter_container
+  .create_new_project_token_enter_info {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(sub_heading_color);
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .press_enter_container
+  .create_new_project_token_enter_info.disable_text {
+  color: getcolor(tag_disable_text_color);
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .press_enter_container
+  .create_new_project_token_enter_info.disable_text
+  strong {
+  color: getcolor(tag_disable_text_color);
+}
+
+.create_new_project_clone_from_github_container
+  .create_new_project_github_clone_form
+  .create_new_project_name_input {
+  margin-top: 20px;
+}
+
+.create_new_project_select_github_branch_container {
+  flex: 1;
+  min-width: 0;
+}
+
+.create_new_project_select_github_branch_container
+  .create_new_project_select_github_branch {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+
+.create_new_project_select_github_branch_container
+  .create_new_project_select_github_branch
+  .create_new_project_select_branch {
+  border-color: getcolor(input_color_border);
+}
+
+@media only screen and (max-width: 1800px) {
+  .create_new_project_outer {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .create_new_project_outer {
+    height: calc(100% - 71px);
+  }
+
+  .select_list_outer > div {
+    max-height: 120px;
+  }
+
+  .create_new_project_heading {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .create_new_project_steps {
+    margin-bottom: 50px;
+  }
+
+    .create_new_project_grid_card {
+    padding: 17px 15px;
+  }
+
+    .create_new_project_grid_card
+    .create_new_project_grid_card_title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_icon
+    img {
+    width: 30px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_github_url
+    img {
+    width: 20px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_website_clone_icon
+    img {
+    width: 60px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_clone_from_github
+    .create_new_project_clone_github_icon
+    img {
+    width: 60px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .login_success_msg_container
+    img {
+    width: 12px;
+    margin-right: 8px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error img {
+    width: 12px;
+    margin-right: 8px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error img {
+    width: 12px;
+    margin-right: 8px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .github_go_to_setting_link
+    > span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .github_go_to_setting_link
+    .github_go_to_setting_link_icon
+    > img {
+    width: 12px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_select_new
+    .grid_card_icon
+    img {
+    width: 16px;
+  }
+    .create_new_project_grid_card
+    .grid_card_icon
+    img {
+    width: 16px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_detail_textarea
+    textarea {
+    height: 140px;
+  }
+
+  .create_new_project_select_cms_container .create_new_project_select_cms h2 {
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Gilroy-Regular';
+    margin: 0;
+    text-align: center;
+    color: getcolor(heading_color);
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_clone_from_github
+    h2 {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form {
+    padding-top: 120px;
+  }
+
+  .create_new_project_select_github_branch_container
+    .create_new_project_select_github_branch {
+    margin-top: 120px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_card
+    .create_new_project_select_cms_card_coming_soon {
+    top: -10px;
+    width: 70px;
+    font-size: 8px;
+    line-height: 8px;
+    padding: 5px;
+  }
+
+  .create_new_project_select_cms_container .create_new_project_select_cms h3 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    h2 {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 35px;
+  }
+
+
+    .create_new_project_cms_setting_form_container
+    .create_new_project_cms_setting_form
+    h2 {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 10px 0 55px 0;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_website_clone_icon {
+    margin: 40px 0 30px 0;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_select_new
+    h3 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_select_new {
+    padding: 17px 15px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form {
+    margin-top: 80px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_or_divider {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_github_url {
+    padding: 14px 20px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_github_url
+    .card_separator {
+    height: 30px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_github_url
+    p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+
+    .create_new_project_cms_setting_form_container
+    .create_new_project_cms_setting_form
+    .create_new_project_project_input {
+    margin-bottom: 25px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .login_success_msg_container {
+    padding: 10px 12px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error {
+    padding: 10px 12px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .login_success_msg_container
+    span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .create_new_project_buttons_container {
+    padding: 18px 30px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_location_browse
+    input {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 16px 16px;
+    padding-right: 100px;
+  }
+
+  .create_new_project_buttons_container .create_new_project_button_cancel {
+    font-size: 12px;
+    min-height: 34px;
+    min-width: 75px;
+  }
+
+  .create_new_project_buttons_container .create_new_project_button_continue {
+    font-size: 12px;
+    min-height: 34px;
+    min-width: 100px;
+  }
+
+  .create_new_project_buttons_container
+    .create_new_project_button_continue
+    img {
+    width: 12px;
+  }
+  //  .create_new_project_list_view .create_new_project_grid > div .create_new_project_grid_card.create_new_project_coming_soon .create_new_project_coming_soon_text {
+  //     font-size: 10px;
+  //     line-height: 10px;
+  // }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_add_ssh_key {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_add_ssh_key
+    .create_new_project_project_add_ssh_key_icon
+    img {
+    width: 11px;
+    // margin-right: 5px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_add_ssh_key {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_add_ssh_key
+    .create_new_project_project_add_ssh_key_icon
+    img {
+    width: 11px;
+    // margin-right: 5px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_location_browse
+    .create_new_project_project_location_browse_button {
+    right: 8px;
+    padding: 10px 0;
+  }
+
+   .create_new_project_project_detail_full_form {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .create_new_project_section_website_clone_title {
+    font-size: 16px;
+    line-height: 16px;
+    // margin-bottom: 40px;
+  }
+
+
+    .create_new_project_website_clone_step_three
+    .create_new_project_project_detail_form {
+    margin-top: 40px;
+  }
+
+
+    .create_new_project_website_clone_step_two
+    .create_new_project_project_detail_form {
+    margin-top: 40px;
+  }
+
+
+    .create_new_project_website_clone_step_two
+    .create_new_project_select_cms_container_website_clone {
+    margin-bottom: 40px;
+  }
+
+  .create_new_project_website_clone_title {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+
+    .create_new_project_website_clone_step_three
+    .create_new_project_project_detail_form
+    .create_new_project_database_button {
+    min-width: 100px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 9.5px 0;
+  }
+
+
+    .create_new_project_website_clone_step_three
+    .create_new_project_project_detail_form
+    .create_new_project_database_button
+    img {
+    width: 12px;
+    margin-right: 8px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card {
+    padding: 30px 35px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_content {
+    margin-left: 25px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_header
+    .create_new_project_project_info_icon {
+    margin-right: 10px;
+
+    .create_new_project_website_clone_title {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+
+
+      .create_new_project_website_clone_step_three
+      .create_new_project_project_detail_form
+      .create_new_project_database_button {
+      min-width: 110px;
+      font-size: 12px;
+      line-height: 12px;
+      padding: 9px 0;
+    }
+
+
+      .create_new_project_website_clone_step_three
+      .create_new_project_project_detail_form
+      .create_new_project_database_button
+      img {
+      width: 12px;
+      margin-right: 8px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card {
+      padding: 30px 35px;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card
+      .create_new_project_project_info_content {
+      margin-left: 25px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card
+      .create_new_project_project_info_header
+      .create_new_project_project_info_icon {
+      margin-right: 10px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card
+      .create_new_project_project_info_header
+      .create_new_project_project_info_icon
+      img {
+      width: 15px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card
+      .create_new_project_project_info_header {
+      margin-bottom: 35px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card
+      .create_new_project_project_info_header
+      .create_new_project_project_info_header_title {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card
+      .create_new_project_project_info_content
+      p {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 10px;
+    }
+
+
+      .create_new_project_project_detail_form
+      .create_new_project_project_copy_textarea
+      textarea {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 20px;
+      // padding-right: 35px!important;
+    }
+
+
+      .create_new_project_project_detail_form
+      .create_new_project_project_copy_ssh_outer
+      .create_new_project_project_copy_ssh_key
+      .create_new_project_project_copy_ssh_key_button {
+      padding: 0;
+      width: 28px;
+      height: 28px;
+    }
+
+
+      .create_new_project_project_copy_ssh_key
+      .create_new_project_project_copy_ssh_key_button
+      img {
+      width: 12px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card
+      .create_new_project_project_info_divider {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card.create_new_project_project_download_info {
+      padding: 20px 35px;
+    }
+
+    .create_new_project_website_clone_container
+      .create_new_project_website_clone_step_four
+      .create_new_project_project_info_card.create_new_project_project_download_info
+      .create_new_project_project_download_info_title {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card.create_new_project_project_download_info {
+    padding: 20px 35px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card.create_new_project_project_download_info
+    .create_new_project_project_download_info_title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+
+    .create_new_project_website_clone_step_two
+    .create_new_project_select_cms_container_website_clone {
+    margin-bottom: 40px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_change_ssh_key_button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 9px 0;
+    min-width: 135px;
+  }
+
+
+    .create_new_project_project_copy_ssh_key
+    .create_new_project_project_copy_ssh_key_button {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .create_new_project_heading {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+
+  .create_new_project_steps {
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+  }
+
+    .create_new_project_grid_card
+    .create_new_project_grid_card_title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_icon
+    img {
+    width: 25px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_github_url
+    img {
+    width: 15px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_website_clone_icon
+    img {
+    width: 50px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_input_server_info {
+    margin-bottom: 15px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_input_server_info {
+    margin-bottom: 15px;
+  }
+  //
+  //
+  // .create_new_project_website_clone_container
+  // .create_new_project_website_clone_step_one
+  //  .create_new_project_project_add_ssh_key  {
+
+  //    font-size: 10px;
+  //    line-height: 10px;
+  //    margin-top: 10px;
+  //  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_add_ssh_key {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_add_ssh_key
+    .create_new_project_project_add_ssh_key_icon
+    img {
+    width: 10px;
+    margin-right: 5px;
+  }
+
+
+    .create_new_project_website_clone_step_three
+    .create_new_project_project_detail_form
+    .create_new_project_database_button {
+    min-width: 90px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 8px 0;
+  }
+
+
+    .create_new_project_website_clone_step_three
+    .create_new_project_project_detail_form
+    .create_new_project_database_button
+    img {
+    width: 10px;
+    margin-right: 5px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_clone_from_github
+    .create_new_project_clone_github_icon
+    img {
+    width: 50px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_clone_from_github
+    .account_login_button
+    img {
+    width: 10px;
+    margin-left: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .enter_ok_btn
+    img {
+    margin-left: 5px;
+    width: 7px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .enter_ok_btn
+    img {
+    width: 7px;
+    margin-left: 5px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .login_success_msg_container
+    img {
+    width: 10px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error img {
+    width: 10px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error img {
+    width: 10px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .github_go_to_setting_link
+    > span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .github_go_to_setting_link
+    .github_go_to_setting_link_icon
+    > img {
+    width: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_select_new
+    .grid_card_icon
+    img {
+    width: 14px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .press_enter_container
+    .enter_icon
+    img {
+    width: 6px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .press_enter_container
+    .enter_icon
+    img {
+    width: 6px;
+  }
+
+    .create_new_project_grid_card
+    .grid_card_icon
+    img {
+    width: 14px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .create_new_project_select_cms_container .create_new_project_select_cms h3 {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .create_new_project_clone_select {
+    padding: 13px 12px;
+    padding-right: 25px;
+    margin-top: 20px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_clone_from_github {
+    margin-top: 40px;
+  }
+
+  .create_new_project_select_cms_container .create_new_project_select_cms h2 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_clone_from_github
+    h2 {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_clone_from_github
+    .account_login_button {
+    height: 30px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_detail_textarea
+    textarea {
+    height: 120px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form {
+    padding-top: 100px;
+  }
+
+  .create_new_project_select_github_branch_container
+    .create_new_project_select_github_branch {
+    margin-top: 100px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    h2 {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 30px;
+  }
+
+
+    .create_new_project_cms_setting_form_container
+    .create_new_project_cms_setting_form
+    h2 {
+    margin: 20px 0 40px 0;
+  }
+
+
+    .create_new_project_website_clone_step_two
+    .create_new_project_select_cms_container_website_clone {
+    margin-bottom: 30px;
+  }
+
+
+    .create_new_project_website_clone_step_two
+    .create_new_project_project_detail_form {
+    margin-top: 30px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_website_clone_icon {
+    margin: 30px 0 30px 0;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_select_new
+    h3 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form {
+    margin-top: 70px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_options
+    .create_new_project_or_divider {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .create_new_project_section_website_clone_title {
+    font-size: 14px;
+    line-height: 14px;
+    // text-align: center;
+    // margin-bottom: 30px;
+  }
+
+  .create_new_project_website_clone_title {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+   .create_new_project_project_detail_full_form {
+    margin-top: 30px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .press_enter_container {
+    margin-top: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .create_new_project_name_input {
+    margin-top: 30px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .create_new_project_tag_option_list {
+    --gap: 5px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .enter_ok_btn {
+    font-size: 10px;
+    line-height: 10px;
+    min-width: 45px;
+    padding: 6px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form
+    .press_enter_container
+    .create_new_project_token_enter_info {
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 10px;
+    margin-right: 3px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .enter_ok_btn {
+    font-size: 10px;
+    line-height: 10px;
+    min-width: 45px;
+    padding: 6px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .press_enter_container {
+    margin-top: 10px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_location_browse
+    input {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 12px 12px;
+    padding-right: 80px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_location_browse
+    .create_new_project_project_location_browse_button {
+    min-width: 65px;
+    padding: 7px 0;
+    right: 6px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_copy_ssh_outer
+    .create_new_project_project_copy_ssh_key {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .press_enter_container
+    .create_new_project_token_enter_info {
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 10px;
+    margin-right: 3px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_github_url {
+    padding: 9px 20px;
+  }
+
+  .create_new_project_select_cms_container
+    .create_new_project_select_cms
+    .create_new_project_select_cms_github_url
+    p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+
+    .create_new_project_cms_setting_form_container
+    .create_new_project_cms_setting_form
+    .create_new_project_project_input {
+    margin-bottom: 20px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .login_success_msg_container {
+    padding: 9px 10px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error {
+    padding: 9px 10px;
+  }
+
+  .create_new_project_clone_from_github_container
+    .create_new_project_github_clone_form
+    .login_success_msg_container
+    span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .create_new_project_website_clone_container .ssh_key_form_error span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .create_new_project_buttons_container {
+    padding: 15px 30px;
+  }
+
+  .create_new_project_buttons_container .create_new_project_button_cancel {
+    font-size: 10px;
+    min-height: 30px;
+    min-width: 65px;
+  }
+
+  .create_new_project_buttons_container .create_new_project_button_continue {
+    font-size: 10px;
+    min-height: 30px;
+    min-width: 90px;
+  }
+
+  .create_new_project_buttons_container
+    .create_new_project_button_continue
+    img {
+    width: 10px;
+    margin-right: 5px;
+  }
+  .create_new_project_outer {
+    height: calc(100% - 61px);
+    padding-top: 4%;
+  }
+
+
+    .create_new_project_website_clone_step_three
+    .create_new_project_project_detail_form {
+    margin-top: 30px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card {
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    cursor: default;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_content {
+    margin-left: 25px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_header
+    .create_new_project_project_info_icon {
+    margin-right: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_header {
+    margin-bottom: 30px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_header
+    .create_new_project_project_info_header_title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_content
+    p {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_copy_textarea
+    textarea {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 15px;
+    padding-right: 35px !important;
+  }
+
+
+    .create_new_project_project_copy_ssh_key
+    .create_new_project_project_copy_ssh_key_button {
+    padding: 0;
+    width: 28px;
+    height: 28px;
+  }
+
+
+    .create_new_project_project_copy_ssh_key
+    .create_new_project_project_copy_ssh_key_button
+    img {
+    width: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_divider {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card.create_new_project_project_download_info {
+    padding: 15px 30px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_project_change_ssh_key_button {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 8px 0;
+    min-width: 110px;
+  }
+
+
+    .create_new_project_website_clone_step_two
+    .create_new_project_select_cms_container_website_clone {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .create_new_project_heading {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .create_new_project_steps {
+    margin-bottom: 30px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_detail_textarea
+    textarea {
+    height: 100px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_token_enter_form {
+    margin-top: 60px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card {
+    padding: 20px;
+
+    margin-bottom: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_header {
+    margin-bottom: 20px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_header
+    .create_new_project_project_info_header_title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_content
+    p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_header
+    .create_new_project_project_info_icon
+    img {
+    width: 10px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_content {
+    margin-left: 20px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_copy_ssh_outer
+    .create_new_project_project_copy_ssh_key
+    .create_new_project_project_copy_ssh_key_button {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_copy_ssh_outer
+    .create_new_project_project_copy_ssh_key
+    .create_new_project_project_copy_ssh_key_button
+    img {
+    width: 8px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card
+    .create_new_project_project_info_divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_info_card.create_new_project_project_download_info {
+    padding: 12px 20px;
+  }
+
+  .create_new_project_website_clone_container
+    .create_new_project_website_clone
+    .create_new_project_website_clone_step_four
+    .create_new_project_project_detail_form {
+    margin-top: 0;
+    width: 43%;
+  }
+
+
+    .create_new_project_project_detail_form
+    .create_new_project_project_location_browse
+    .create_new_project_project_location_browse_button
+    span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+}
+
+@media only screen and (max-height: 768px) {
+  .create_new_project_heading {
+    margin-bottom: 40px;
+  }
+
+  .create_new_project_steps {
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .create_new_project_heading {
+    margin-bottom: 35px;
+  }
+
+  .create_new_project_steps {
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+  }
+}

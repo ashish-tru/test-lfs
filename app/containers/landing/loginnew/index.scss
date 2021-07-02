@@ -1,0 +1,222 @@
+@import "../../../global.scss";
+
+/* STARTUP SCREEN CSS START HERE */
+
+.startup_landing {
+  height: 100vh;
+  background-color: getcolor(screen_background);
+}
+
+.startup_landing .startup_landing_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: 35%, 35% !important;
+  background-position: left 50% , right 50% !important;
+}
+
+
+.startup_landing .startup_landing_container .startup_landing_wrapper {
+  width: 37%;
+  max-width: 710px;
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_progress_bar > div {
+ border-radius:15px ;
+
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_title {
+  font-size: 36px;
+  color: getcolor(heading_color);
+  line-height: 36px;
+  font-family: "Gilroy-Regular";
+  margin-bottom: 0;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_loading_info strong {
+  font-family: "Gilroy-Bold";
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_title strong {
+  font-family:"Gilroy-Bold";
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_subtitle {
+  color: getcolor(sub_heading_color);
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper  .startup_landing_icon {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10.6% 0;
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_icon img{
+
+  width: 18%;
+    max-width: 119px;
+
+}
+
+.startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_loading_info {
+  font-size: 16px;
+  color: getcolor(text_color);
+  font-family: 'Gilroy-Regular';
+  margin-bottom: 0;
+  line-height: 20px;
+  margin-top: 37px;
+
+}
+
+
+
+/* STARTUP SCREEN CSS ENDS HERE */
+
+
+/** RESPONSIVE START FROM HERE  **/
+
+
+@media only screen and (max-width: 1600px) {
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_progress_bar > div {
+    border-radius:14px ;
+   }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_title {
+   font-size: 34px;
+   line-height: 34px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 27px;
+  }
+    .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_loading_info {
+    font-size: 14px;
+    margin-top: 26px;
+    line-height: 14px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1599px) {
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_title {
+   font-size: 33px;
+   line-height: 33px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_loading_info {
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 12px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1499px) {
+
+
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_title {
+   font-size: 32px;
+   line-height: 30px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_subtitle {
+    font-size: 14px;
+    line-height: 14x;
+    margin-top: 24px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_loading_info {
+    font-size: 12px;
+    margin-top: 22px;
+  }
+
+}
+
+@media only screen and (max-width: 1399px) {
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_progress_bar > div {
+    border-radius:10px;
+
+   }
+
+   .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_title {
+   font-size: 28px;
+   line-height: 28px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_subtitle {
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 20px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_loading_info {
+    font-size: 12px;
+    margin-top: 20px;
+
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper {
+    width: 42%;
+    max-width: 420px;
+  }
+
+}
+
+@media only screen  and (max-width: 1199px) {
+
+  .startup_landing .startup_landing_container {
+    background-position: left 56% , right 56% !important;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading
+  .startup_landing_title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_heading .startup_landing_subtitle {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 15px;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper  .startup_landing_icon {
+    margin: 5% 0;
+  }
+
+  .startup_landing .startup_landing_container .startup_landing_wrapper .startup_landing_loading_info {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 20px;
+  }
+
+}
+
+
+
+/** RESPONSIVE START FROM HERE  **/

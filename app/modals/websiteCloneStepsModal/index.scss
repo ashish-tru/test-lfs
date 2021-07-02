@@ -1,0 +1,241 @@
+@import '../../global.scss';
+.create_new_project_modal .create_new_project_modal_container {
+  padding: 0;
+  width: 75%;
+  background-color: getcolor(dashboard_background);
+  display: flex;
+  flex-direction: column;
+}
+.create_new_project_modal .create_new_project_close_icon{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.create_new_project_modal .create_new_project_close_icon img{
+  width: 100%;
+  display: block;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard {
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_outer {
+  overflow-y: overlay;
+  padding: 0 65px 0;
+  padding-top: 30px;
+  overflow-x: hidden;
+  margin-bottom: 81px;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_outer::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_outer::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_outer::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: getcolor(scrollbar_roll_color);
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_inner_container {
+  width: 950px;
+  margin: 0 auto;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_inner_container
+  .create_new_project_select_dropdown {
+  margin-bottom: 20px;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_inner_container
+  .select_list_outer
+  > div {
+  max-height: 160px;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_inner_container
+  .create_new_project_heading {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(heading_color);
+  text-align: center;
+}
+.create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_inner_container
+  .create_new_project_steps {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(sub_heading_color);
+  border-bottom: 1px solid getcolor(divider_color);
+  text-align: left;
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container {
+    width: 850px;
+  }
+  .create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_outer {
+    margin-bottom: 71px;
+  }
+ 
+
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .create_new_project_modal
+  .create_new_project_modal_container
+  .create_new_project_dashboard
+  .create_new_project_outer {
+    margin-bottom: 61px;
+  }
+ 
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container {
+    width: 750px;
+  }
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+.create_new_project_modal .create_new_project_modal_container {
+        width: 85%;
+}
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container {
+    width: 700px;
+  }
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    margin-bottom: 30px;
+  }
+
+}
+
+
+@media only screen and (max-height: 768px) {
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    margin-bottom: 40px;
+  }
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-height: 700px) {
+ 
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    margin-bottom: 35px;
+  }
+  .create_new_project_modal
+    .create_new_project_modal_container
+    .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+  }
+}

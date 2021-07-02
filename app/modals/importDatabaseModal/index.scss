@@ -1,0 +1,178 @@
+@import '../../global.scss';
+
+.import_database_main_modal .import_database_modal {
+    padding: 40px 20px;
+    border: none;
+
+}
+.import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_icon img{
+    width: 50px;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_header .heading{
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    color: getcolor(heading_color);
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_list{
+  padding: 0 0 0 15px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_list li{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    color: getcolor(sub_heading_color);
+    text-align: left;
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_list li:last-child{
+  margin-bottom: 0;
+}
+.import_database_main_modal .import_database_modal  .import_database_modal_content {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  color: getcolor(sub_heading_color);
+  text-align: center;
+  margin-bottom: 35px;
+  font-family: 'Gilroy-Regular';
+}
+
+.import_database_main_modal .import_database_modal > div >.import_database_modal_btn {
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+.import_database_main_modal .import_database_modal > div >.import_database_modal_btn > button:first-child {
+  margin-top: 25px;
+  padding: 0;
+  min-width: auto;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_checkbox{
+  margin-top: 30px;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_checkbox label{
+  width: 14px;
+  height: 14px;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_checkbox label > div{
+  width: 14px;
+  height: 14px;
+  background-size: 7px !important;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_checkbox span{
+  font-size: 14px;
+  line-height: 14px;
+}
+.import_database_main_modal .import_database_modal .import_database_modal_btn button{
+    min-width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 8px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1600px){
+   .import_database_main_modal .import_database_modal{
+        padding: 35px  15px;
+
+    }
+   .import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_icon img{
+        width: 45px;
+    }
+   .import_database_main_modal .import_database_modal .import_database_modal_header .heading{
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_list{
+      margin-bottom: 35px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_checkbox{
+      margin-top: 25px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_checkbox label{
+      width: 12px;
+      height: 12px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_checkbox label > div{
+      width: 12px;
+      height: 12px;
+      background-size: 6px !important;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_checkbox span{
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_list li{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_btn button{
+        font-size: 12px;
+        line-height: 12px;
+        min-width: 125px;
+        padding: 10px 8px;
+
+    }
+    .import_database_main_modal .import_database_modal > div >.import_database_modal_btn > button:first-child {
+      margin-top: 20px;
+    }
+
+    .import_database_main_modal .import_database_modal  .import_database_modal_content {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1399px){
+   .import_database_main_modal .import_database_modal{
+      padding: 30px 15px;
+      border: none;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_icon img{
+        width: 40px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_header .heading{
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 25px;
+
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_list{
+      margin-bottom: 30px;
+    }
+
+    .import_database_main_modal .import_database_modal .import_database_modal_header .import_database_modal_list li{
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .import_database_main_modal .import_database_modal .import_database_modal_btn button{
+        font-size: 10px;
+        line-height: 10px;
+        padding: 8px 6px;
+        min-width: 100px;
+    }
+
+    .import_database_main_modal .import_database_modal > div >.import_database_modal_btn > button:first-child {
+      margin-top: 15px;
+    }
+
+    .import_database_main_modal .import_database_modal .import_database_modal_checkbox{
+      margin-top: 20px;
+    }
+
+    .import_database_main_modal .import_database_modal  .import_database_modal_content {
+      font-size: 11px;
+      line-height: 16px;
+      margin-bottom: 25px;
+    }
+}

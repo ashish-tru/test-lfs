@@ -1,0 +1,368 @@
+@import "../../../global.scss";
+
+/* LOGIN SCREEN CSS START HERE */
+
+.restart_landing {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: getcolor(screen_background);
+}
+
+.restart_landing .restart_col_left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-size: 100% 100vh !important;
+  background-repeat: no-repeat !important;
+  align-self: center;
+  background-position: top -45px center !important;
+}
+
+.restart_landing .restart_col_left .right {
+  position: absolute;
+  width: 82%;
+  height: 95%;
+  right: 68px;
+  top: 1px;
+  background-size: 100% !important;
+  background-position: top right !important;
+}
+.restart_landing .restart_col_left .restart_inner_wrapper {
+  width: 100%;
+  padding: 0 30% 0 22%;
+}
+
+.restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+  color: getcolor(heading_color);
+  font-size: 34px;
+  margin: 0 0 8%;
+  line-height: 44px;
+  font-family: "Gilroy-Medium";
+}
+
+.restart_landing .restart_col_left .restart_inner_wrapper .restart_subheading {
+  color: getcolor(sub_heading_color);
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Gilroy-Regular";
+  margin: 0;
+}
+.restart_landing .restart_col_left .restart_icon {
+  justify-content: left;
+  margin-bottom: 10%;
+}
+.restart_landing .restart_col_left .restart_icon img {
+  width: 60%;
+  cursor: default;
+}
+
+.restart_landing .restart_col_right {
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.restart_landing .restart_col_right .restart_inner_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 46%;
+}
+.restart_landing .restart_col_right .restart_title {
+  color: getcolor(heading_color);
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.restart_landing .restart_col_right .restart_message_block {
+  color: getcolor(text_color);
+  text-align: left;
+}
+
+.restart_landing .restart_col_right .restart_message_block .restart_message_title {
+  color: getcolor(heading_color);
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 9%;
+  font-family: "Gilroy-Medium";
+}
+
+.restart_landing .restart_col_right .restart_message_block .restart_message_text {
+  color: getcolor(text_color);
+  font-size: 16px;
+  text-align: left;
+  line-height: 26px;
+  margin-bottom: 9%;
+  font-family: "Gilroy-Regular";
+}
+
+.restart_landing .restart_col_right .restart_message_block .restart_restartbtn {
+  font-size: 16px;
+  padding: 16px;
+  line-height: 16px;
+  min-width:120px ;
+}
+
+
+.restart_landing .restart_col_right .restart_message_block .restart_btn_login {
+  font-size: 16px;
+  padding: 16px;
+  line-height: 16px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+.restart_landing .restart_col_right .sign_in_block {
+  color: getcolor(text_color);
+  text-align: left;
+}
+
+.restart_landing .restart_col_right .sign_in_block .sign_in_title {
+  color: getcolor(heading_color);
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 9%;
+  font-family: "Gilroy-Medium";
+  text-align: center;
+}
+
+
+.restart_landing .restart_col_right .sign_in_block .restart_restartbtn {
+  font-size: 16px;
+  padding: 16px;
+  line-height: 16px;
+  min-width:120px ;
+}
+
+
+.restart_landing .restart_col_right .sign_in_block .restart_btn_login {
+  font-size: 16px;
+  padding: 16px;
+  line-height: 16px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* LOGIN SCREEN CSS ENDS HERE */
+
+/*  RESPONSIVE CSS START FORM HERE */
+
+@media screen and (max-width: 1700px) {
+
+
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .restart_landing .restart_col_right .restart_message_block .restart_restartbtn {
+    font-size: 15px;
+    padding: 15px;
+    line-height: 15px;
+    min-width:110px;
+  }
+
+.restart_landing .restart_col_right .sign_in_block .restart_btn_login {
+  font-size: 15px;
+  padding: 15px;
+  line-height: 15px;
+
+  }
+
+
+}
+@media screen and (max-width: 1600px) {
+
+  .restart_landing .restart_col_left .restart_icon {
+    margin-bottom: 10%;
+  }
+  .restart_landing .restart_col_left .restart_icon img {
+    width: 53%;
+  }
+  .restart_landing .restart_col_left .restart_inner_wrapper {
+    padding: 0 20% 0 25%;
+  }
+
+  .restart_landing .restart_col_right .restart_inner_wrapper {
+    max-width: 50%;
+  }
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    font-size: 30px;
+    line-height: 40px;
+
+  }
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_subheading {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .restart_landing .restart_col_right .restart_message_block .restart_message_title {
+    font-size: 22px;
+    line-height: 22px;
+
+  }
+
+ .restart_landing .restart_col_right .sign_in_block .sign_in_title {
+    font-size: 22px;
+    line-height: 22px;
+
+  }
+
+  .restart_landing .restart_col_right .restart_message_block .restart_message_text {
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+  .restart_landing .restart_col_right .restart_message_block .restart_restartbtn {
+    font-size: 14px;
+    padding: 12px;
+    line-height: 14px;
+    min-width:100px;
+  }
+
+.restart_landing .restart_col_right .sign_in_block .restart_btn_login {
+  font-size: 14px;
+    padding: 12px;
+    line-height: 14px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1399px) {
+  .restart_landing .restart_col_left {
+    background-position: top -30px center !important;
+  }
+
+
+
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .restart_landing .restart_col_right .restart_message_block .restart_message_title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+.restart_landing .restart_col_right .sign_in_block .sign_in_title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+
+
+  .restart_landing .restart_col_right .restart_message_block .restart_restartbtn {
+    font-size: 12px;
+    padding: 10px;
+    line-height: 12px;
+    min-width: 80px;
+  }
+
+.restart_landing .restart_col_right .sign_in_block .restart_btn_login {
+  font-size: 12px;
+  padding: 10px;
+  line-height: 12px;
+
+  }
+}
+
+@media screen and (max-width: 1299px) {
+
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_subheading {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .restart_landing .restart_col_right .restart_message_block .restart_message_text {
+    font-size: 12px;
+    line-height: 18px;
+
+  }
+
+  .restart_landing .restart_col_right .sign_in_block .sign_in_title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1199px) {
+
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .restart_landing .restart_col_right .restart_message_block .restart_message_text {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .restart_landing .restart_col_right .restart_message_block .restart_restartbtn {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 9px;
+
+  }
+
+.restart_landing .restart_col_right .sign_in_block .restart_btn_login {
+    font-size: 10px;
+    padding: 9px;
+    line-height: 10px;
+  }
+
+  .restart_landing .restart_col_right .sign_in_block .sign_in_title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1440px) and (max-height: 720px){
+  .restart_landing .restart_col_left .restart_icon {
+    margin-bottom: 9%;
+  }
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    margin-bottom: 6%;
+  }
+}
+@media screen and (min-width: 1399px) and (max-width: 1440px) and (max-height: 780px){
+  .restart_landing .restart_col_left .restart_icon {
+    margin-bottom: 8%;
+  }
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1600px) and (min-height: 800px) and (max-height: 810px){
+  .restart_landing .restart_col_left .restart_icon {
+    margin-bottom: 8%;
+  }
+  .restart_landing .restart_col_left .restart_inner_wrapper .restart_heading {
+    margin-bottom: 6%;
+  }
+}
+
+/*  RESPONSIVE CSS ENDS HERE */

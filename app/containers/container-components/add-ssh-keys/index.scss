@@ -1,0 +1,211 @@
+@import '../../../global.scss';
+
+.shh_key_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.ssh_key_inner_container {
+  position: relative;
+  // -ms-flex: 1 1 auto;
+  // flex: 1 1 auto;
+  // padding: 1rem;
+  // overflow-y: overlay;
+  // max-height: 350px;
+}
+
+.shh_key_container .ssh_key_inner_container::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+.shh_key_container .ssh_key_inner_container::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.shh_key_container .ssh_key_inner_container::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: getcolor(scrollbar_roll_color);
+}
+
+.shh_key_container .ssh_key_inner_container .shh_key_title {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 30px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(heading_color);
+  text-align: center;
+  border-bottom: 1px solid getcolor(divider_color);
+}
+
+.shh_key_container .ssh_key_inner_container .ssh_key_options_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  max-width: 620px;
+  margin: 30px auto 0px;
+}
+.shh_key_container
+  .ssh_key_inner_container
+  .ssh_key_options_container
+  .ssh_key_radio_box {
+  display: inline-flex;
+  align-items: center;
+}
+.shh_key_container
+  .ssh_key_inner_container
+  .ssh_key_options_container
+  .ssh_key_radio_box
+  .ssh_key_radio {
+  width: 14px;
+  height: 14px;
+  border: 1px solid getcolor(divider_color);
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.shh_key_container
+  .ssh_key_inner_container
+  .ssh_key_options_container
+  .ssh_key_radio_box
+  .ssh_key_radio.active {
+  background-color: getcolor(theme_color);
+}
+.shh_key_container
+  .ssh_key_inner_container
+  .ssh_key_options_container
+  .ssh_key_radio_box
+  .ssh_key_radio_label {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: 'Gilroy-Regular';
+  color: getcolor(heading_color);
+}
+.shh_key_container .ssh_key_inner_container .ssh_key_form_container {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.shh_key_container .ssh_key_inner_container .ssh_key_form_container .ssh_key_textarea{
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1px solid getcolor(divider_color);
+  background-color: getcolor(dashboard_background);
+}
+
+.button_container .save_button {
+  padding: 0 5px;
+  font-size: 14px;
+  min-height: 40px;
+  min-width: 120px;
+}
+
+.parent_class {
+  top: 80% !important;
+}
+
+.create_new_project_select_branch {
+  margin-bottom: 10px;
+}
+
+.create_new_project_select_branch > span {
+  color: getcolor(heading_color);
+}
+
+.select_list_outer > div {
+  max-height: 160px;
+}
+
+.shh_key_container .ssh_key_inner_container .generate_key_container {
+  position: relative;
+  margin-top: 25px;
+  margin-top: 0px;
+}
+.shh_key_container .ssh_key_inner_container .title {
+  padding: 20px 40px;
+  border-bottom: 1px solid getcolor(divider_color);
+  color: getcolor(heading_color);
+  text-align: center;
+}
+
+.shh_key_container .ssh_key_inner_container .generate_key_container input {
+  padding-right: 100px;
+}
+
+.shh_key_container
+  .ssh_key_inner_container
+  .generate_key_container
+  input:disabled {
+  opacity: 1;
+}
+
+.shh_key_container .ssh_key_inner_container .generate_key_container input {
+  color: var(--color-text_color);
+  border: 1px solid var(--color-input_color_border);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 19.5px 16px;
+  background: transparent;
+  width: 100%;
+  margin: 0;
+  color: transparent;
+  text-shadow: 0 0 0 getcolor(text_color);
+  padding-right: 90px;
+  font-family: 'Gilroy-Regular';
+}
+
+.shh_key_container
+  .ssh_key_inner_container
+  .generate_key_container
+  .generate_key_container_button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 10px 0;
+  min-width: 80px;
+}
+
+.ssh_key_form_error img {
+  width: 14px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+// TODO: need to work on this styling
+.ssh_key_form_error{
+  color: #d7322d;
+  font-family: 'Gilroy-Regular';
+  line-height: 14px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgba(215, 50, 45, 0.25);
+  background-color: rgba(215, 50, 45, 0.07);
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  width: 12px;
+  font-size: 12px;
+  width: auto;
+}
+
+@media only screen and (max-width: 1600px) {
+  .select_list_outer > div {
+    max-height: 120px;
+  }
+}

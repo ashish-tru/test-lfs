@@ -1,0 +1,209 @@
+@import "../../../global.scss";
+
+/* STARTUP SCREEN CSS START HERE */
+
+.startup_landing {
+  height: 100vh;
+  background-color: getcolor(screen_background);
+}
+
+.startup_landing .startup_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: 35%, 35% !important;
+  background-position: left 50%, right 50% !important;
+}
+
+
+.startup_landing .startup_container .startup_wrapper {
+  width: 37%;
+}
+
+.startup_landing .startup_container .startup_wrapper .startup_progress_bar > div {
+  border-radius: 15px;
+}
+.startup_landing .startup_container .startup_wrapper .startup_progress_bar_inner {
+  padding: 3.9% 3%;
+}
+.startup_landing .startup_container .startup_wrapper .startup_heading {
+  margin-bottom: 8.5%;
+}
+.startup_landing .startup_container .startup_wrapper .startup_heading .startup_title {
+  font-size: 36px;
+  color: getcolor(heading_color);
+  line-height: 36px;
+  font-family: "Gilroy-Regular";
+  margin: 0;
+}
+
+.startup_landing .startup_container .startup_wrapper .startup_loading_info strong {
+  font-family: "Gilroy-Bold";
+}
+
+.startup_landing
+  .startup_container
+  .startup_wrapper
+  .startup_heading
+  .startup_title
+  strong {
+  font-family: "Gilroy-Bold";
+}
+
+.startup_landing
+  .startup_container
+  .startup_wrapper
+  .startup_heading
+  .startup_subtitle {
+  color: getcolor(sub_heading_color);
+  font-size: 16px;
+  font-family: "Gilroy-Regular";
+  line-height: 16px;
+  margin: 0;
+  margin-top: 4.4%;
+}
+
+.startup_landing .startup_container .startup_wrapper .startup_icon {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 8% 0 10% 0;
+}
+
+.startup_landing .startup_container .startup_wrapper .startup_icon img {
+  width: 16.8%;
+}
+
+.startup_landing .startup_container .startup_wrapper .startup_loading_info {
+  font-size: 16px;
+  color: getcolor(text_color);
+  font-family: "Gilroy-Regular";
+  margin-bottom: 0;
+  line-height: 16px;
+  margin-top: 5.7%;
+}
+
+/* STARTUP SCREEN CSS ENDS HERE */
+
+/** RESPONSIVE CSS START FROM HERE  **/
+
+@media only screen and (max-width: 1600px) {
+
+  .startup_landing .startup_container .startup_wrapper .startup_icon {
+    margin: 10% 0;
+  }
+  .startup_landing .startup_container .startup_wrapper .startup_heading .startup_title {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .startup_landing
+    .startup_container
+    .startup_wrapper
+    .startup_heading
+    .startup_subtitle {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_loading_info {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .startup_landing .startup_container .startup_wrapper .startup_progress_bar > div {
+    border-radius: 12px;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_progress_bar_inner {
+    padding: 4.4% 3%;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .startup_landing .startup_container .startup_wrapper .startup_heading {
+    margin-bottom: 8.1%;
+  }
+  .startup_landing .startup_container .startup_wrapper .startup_heading .startup_title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .startup_landing
+    .startup_container
+    .startup_wrapper
+    .startup_heading
+    .startup_subtitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_loading_info {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_progress_bar > div {
+    border-radius: 8px;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_progress_bar_inner {
+    padding: 4.9% 4%;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_icon {
+    margin:13% 0 10% 0;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .startup_landing .startup_container .startup_wrapper .startup_heading .startup_title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+  .startup_landing .startup_container .startup_wrapper .startup_heading .startup_title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .startup_landing
+    .startup_container
+    .startup_wrapper
+    .startup_heading
+    .startup_subtitle {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 4.5%;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_loading_info {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 5.6%;
+  }
+
+  .startup_landing .startup_container .startup_wrapper .startup_progress_bar > div {
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .startup_landing .startup_container {
+    background-position: left 52%, right 52% !important;
+  }
+  .startup_landing .startup_container .startup_wrapper .startup_heading .startup_title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+/** RESPONSIVE CSS END HERE  **/
+
+

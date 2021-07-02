@@ -1,0 +1,94 @@
+upstream php {
+  {{#each fastcgi_servers}}
+  server {{{this}}};
+  {{/each}}
+}
+server {
+	listen {{port}};
+  root   "{{root}}";
+
+  index index.php index.html index.htm;
+
+  # Generic restrictions for things like PHP files in uploads
+	include includes/restrictions.conf;
+
+	# Gzip rules
+	include includes/gzip.conf;
+
+	#Rules
+	include includes/cms.conf;
+
+	# PhpMyAdmin location
+	location /phpmyadmin {
+		root "{{phpmyadmin}}";
+		index index.php index.html index.htm;
+
+		location ~ \.php$ {
+			try_files $uri =404;
+			fastcgi_split_path_info ^(.+\.php)(/.+)$;
+
+			include includes/fastcgi_params.conf;
+
+			fastcgi_index index.php;
+			fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+
+			fastcgi_pass php;
+			fastcgi_buffer_size      64k;
+			fastcgi_buffers          32 32k;
+			fastcgi_read_timeout	 1200s;
+
+			proxy_buffer_size        64k;
+			proxy_buffers            32 32k;
+			proxy_busy_buffers_size  256k;
+		}
+	    location ~* ^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$ {
+        	root "{{phpmyadmin}}";
+
+    	}
+	}
+
+	# Static file rules
+	location ~* \.(?:css|js)$ {
+        access_log        off;
+        log_not_found     off;
+        add_header        Cache-Control "no-cache, public, must-revalidate, proxy-revalidate";
+    }
+
+    location ~* \.(?:jpg|jpeg|gif|png|ico|xml)$ {
+        access_log        off;
+        log_not_found     off;
+        expires           5m;
+        add_header        Cache-Control "public";
+    }
+
+    location ~* \.(?:eot|woff|woff2|ttf|svg|otf) {
+        access_log        off;
+        log_not_found     off;
+
+        expires           5m;
+        add_header        Cache-Control "public";
+
+        # allow CORS requests
+        add_header        Access-Control-Allow-Origin *;
+    }
+
+  # PHP Execute
+	location ~ \.php$ {
+		try_files $uri =404;
+		fastcgi_split_path_info ^(.+\.php)(/.+)$;
+
+		include includes/fastcgi_params.conf;
+
+		fastcgi_index index.php;
+		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+
+		fastcgi_pass php;
+		fastcgi_buffer_size      64k;
+		fastcgi_buffers          32 32k;
+		fastcgi_read_timeout	 1200s;
+
+		proxy_buffer_size        64k;
+		proxy_buffers            32 32k;
+		proxy_busy_buffers_size  256k;
+	}
+}

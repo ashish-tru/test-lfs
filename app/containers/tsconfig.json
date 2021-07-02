@@ -1,0 +1,4 @@
+{
+  "extends": "./../../tsconfig.json",
+  "include": ["definitions.d.ts", "*", "container-components/add-ssh-keys"]
+}

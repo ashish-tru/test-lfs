@@ -1,0 +1,242 @@
+@import "../../../global.scss";
+
+.error_landing {
+  background-color: getcolor(screen_background);
+}
+
+.error_landing .error_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.error_landing .error_logo  {
+  cursor: default;
+}
+
+.error_landing .error_container_title {
+  font-size: 88px;
+  line-height: 88px;
+  color:getcolor(error_title);
+  margin-top: 4%;
+  font-family: 'Gilroy-Bold';
+  margin-bottom: 32px;
+}
+
+.error_landing .error_container_sub_title {
+  font-size: 26px;
+  color:getcolor(error_title);
+  line-height: 26px;
+  margin-bottom: 40px;
+  font-family: 'Gilroy-Medium';
+}
+
+
+.error_landing .error_container_content {
+  width: 26%;
+  color:getcolor(text_color);
+  margin: 0 auto;
+}
+
+.error_landing .error_container_content > p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 50px;
+  word-break: break-word;
+}
+
+.error_landing
+ .error_container_content
+.error_container_content_path {
+   margin-bottom: 0;
+   word-break: break-word;
+   font-family: 'Gilroy-Medium';
+
+}
+.error_landing
+ .error_container_content
+.error_container_content_path span{
+   font-family: 'Gilroy-Regular';
+
+}
+.error_landing .error_logo img {
+  width: 5%;
+  margin: 0 auto;
+}
+
+
+.error_landing .error_container .error_landing_btn {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 16px 16px;
+  min-width: 160px;
+  margin-top: 30px;
+}
+.error_landing .error_container .error_landing_btn span {
+  max-width: 140px;
+}
+
+.error_landing .error_container .error_landing_btn img{
+  width: 14px;
+  margin-right: 14px;
+}
+.error_landing .error_container .error_container_content_counting {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Gilroy-Medium';
+  margin-top: 30px;
+  color: getcolor(heading_color);
+}
+.error_landing .error_container .error_container_content_counting span {
+  font-family: 'Gilroy-Regular';
+  color: getcolor(sub_heading_color);
+
+}
+@media only screen  and (max-width: 1800px) {
+  .error_landing .error_container_title {
+    font-size: 78px;
+    line-height: 78px;
+    margin-bottom: 30px;
+ }
+
+ .error_landing .error_container_sub_title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+.error_landing .error_container_content > p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 45px;
+
+}
+
+}
+@media only screen  and (max-width: 1600px) {
+
+  .error_landing .error_container_title {
+     font-size: 68px;
+     line-height: 68px;
+  }
+
+  .error_landing .error_container_sub_title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+
+  .error_landing .error_container_content > p {
+    margin-bottom: 35px;
+  }
+
+.error_landing .error_container .error_landing_btn {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 13px 6px;
+  min-width: 140px;
+  margin-top: 25px;
+}
+.error_landing .error_container .error_landing_btn span {
+  max-width: 160px;
+}
+.error_landing .error_container .error_landing_btn img{
+  width: 12px;
+  margin-right: 12px;
+}
+.error_landing .error_container .error_container_content_counting {
+ margin-top: 25px;
+}
+
+}
+@media only screen  and (max-width: 1440px) {
+  .error_landing .error_container_content {
+    width: 31%;
+  }
+  .error_landing .error_container_title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+ }
+ .error_landing .error_container_sub_title {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen  and (max-width: 1399px) {
+  .error_landing .error_container_content {
+    width: 24%;
+  }
+
+  .error_landing .error_container_title {
+     font-size: 58px;
+     line-height: 58px;
+  }
+  .error_landing .error_container_sub_title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+
+  .error_landing .error_container_content > p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+
+
+}
+
+@media only screen  and (max-width: 1299px) {
+
+
+  .error_landing .error_container_title {
+     font-size: 52px;
+     line-height: 52px;
+     margin-bottom: 30px;
+  }
+
+  .error_landing .error_container_sub_title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+}
+
+
+@media only screen  and (max-width: 1199px) {
+  .error_landing .error_container_title {
+    margin-bottom: 20px;
+    margin-top: 2.7%;
+  }
+
+  .error_landing .error_container_sub_title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+
+  .error_landing .error_container_content > p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .error_landing .error_container .error_landing_btn {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 9px 6px;
+    min-width: 120px;
+    margin-top: 20px;
+  }
+  .error_landing .error_container .error_landing_btn img{
+    width: 10px;
+    margin-right: 10px;
+  }
+  .error_landing .error_container .error_container_content_counting {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 12px;
+   }
+}
+

@@ -1,0 +1,101 @@
+@import '../../../global.scss';
+
+.SSH_list_container {
+  .ssh_list_caption_heading {
+    color: getcolor(sub_heading_color);
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 20px;
+    span {
+      color: getcolor(theme_color);
+      cursor: pointer;
+    }
+    & span:hover {
+      color: getcolor(theme_color);
+      text-decoration: underline;
+    }
+  }
+
+  .card_custom_class {
+    padding: 0;
+    cursor: default;
+    
+  }
+  .card_custom_class:hover {
+    background-color: getcolor(radio_card_background_color);
+    box-shadow: none;
+  }
+
+  .ssh_list_card_header {
+    .ssh_card_header_title_section {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin: 0 auto;
+      align-items: center;
+      border-bottom: 1px solid getcolor(divider_color);
+      .ssh_card_header_title{
+        color: getcolor(heading_color);
+      }
+    }
+
+    .ssh_card_header_subtitle {
+      color: getcolor(sub_heading_color);
+      font-size: 12px;
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid getcolor(divider_color);
+    }
+
+    .ssh_list_outer_container {
+      padding: 10px;
+      .ssh_list_body {
+        border-bottom:  1px solid getcolor(divider_color);
+        padding: 10px 10px;
+        .ssh_list_img {
+          img {
+            text-align: center;
+            width: 18px;
+            height: 18px;
+            margin: auto;
+          }
+        }
+        .account_ssh_col{
+          flex: 1;
+        }
+        .ssh_list_content {
+          text-align: left;
+          .ssh_list_body_key_name {
+            font-size: 12px;
+            line-height: 12px;
+            color: getcolor(heading_color);
+          }
+          .ssh_list_body_pub_key {
+            color: getcolor(sub_heading_color);
+            font-size: 10px;
+            line-height: 10px;
+            margin: 8px 0;
+
+          }
+          .ssh_list_body_pri_key {
+            color: getcolor(sub_heading_color);
+            font-size: 10px;
+            line-height: 10px;
+            margin: 8px 0;
+          }
+        }
+
+        .ssh_list_action_icons {
+          display: flex;
+          justify-content: flex-end;
+          .ssh_key_icons{
+            margin-left: 10px;
+            img{
+              width: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

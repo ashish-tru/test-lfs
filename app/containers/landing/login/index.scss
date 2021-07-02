@@ -1,0 +1,257 @@
+@import "../../../global.scss";
+
+/* STARTUP SCREEN CSS START HERE */
+
+.login_landing {
+  height: 100vh;
+  background-color: getcolor(screen_background);
+}
+
+.login_landing .login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: 35%, 35% !important;
+  background-position: left 50%, right 50% !important;
+}
+
+.login_landing .login_container .login_wrapper {
+  width: 44%;
+}
+
+.login_landing .login_container .login_wrapper .login_heading .login_title {
+  font-size: 36px;
+  color: getcolor(heading_color);
+  line-height: 36px;
+  font-family: "Gilroy-Regular";
+  margin: 0;
+}
+
+.login_landing
+  .login_container
+  .login_wrapper
+  .login_heading
+  .login_title
+  strong {
+  font-family: "Gilroy-Bold";
+}
+
+.login_landing
+  .login_container
+  .login_wrapper
+  .login_heading
+  .login_subtitle {
+  color: getcolor(sub_heading_color);
+  font-size: 16px;
+  font-family: "Gilroy-Regular";
+  line-height: 16px;
+  margin: 0;
+  margin-top: 3%;
+}
+
+.login_landing .login_container .login_wrapper .login_icon {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0  0  10% 0;
+}
+
+.login_landing .login_container .login_wrapper .login_icon img {
+  width: 14%;
+}
+
+.login_landing .login_container .login_wrapper .login_actions {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 7.2%;
+
+}
+
+.login_landing .login_container .login_wrapper .login_actions .login_actions_login_stackbl{
+  min-width: 200px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 16px;
+  }
+
+.login_landing .login_container .login_wrapper .login_actions .login_actions_text_link {
+ padding: 0;
+ margin-top: 3.6%;
+}
+
+
+/* STARTUP SCREEN CSS ENDS HERE */
+
+/** RESPONSIVE CSS START FROM HERE  **/
+
+@media only screen and (min-width: 1920px) {
+ .login_landing .login_container .login_wrapper .login_icon {
+  margin: -2%  0  9% 0;
+}
+}
+
+@media only screen and (max-width: 1600px) {
+
+  .login_landing .login_container .login_wrapper .login_heading .login_title {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .login_landing
+    .login_container
+    .login_wrapper
+    .login_heading
+    .login_subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 3.2%;
+  }
+
+  .login_landing .login_container .login_wrapper .login_icon img {
+    width: 14%;
+  }
+
+    .login_landing .login_container .login_wrapper .login_actions .login_actions_login_stackbl{
+    min-width:160px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px;
+    }
+
+    .login_landing .login_container .login_wrapper .login_actions .login_actions_text_link {
+      padding: 0;
+      margin-top: 4.5%;
+      font-size: 14px;
+      line-height: 14px;
+     }
+}
+
+@media only screen and (max-width: 1499px) {
+
+  .login_landing .login_container .login_wrapper .login_heading .login_title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+}
+
+@media only screen and (max-width: 1399px) {
+  .login_landing .login_container .login_wrapper .login_heading .login_title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .login_landing
+    .login_container
+    .login_wrapper
+    .login_heading
+    .login_subtitle {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 3.4%;
+
+
+  }
+
+
+  .login_landing .login_container .login_wrapper .login_icon img {
+    width: 14.5%;
+  }
+
+  .login_landing .login_container .login_wrapper .login_actions .login_actions_text_link {
+    margin-top: 3.6%;
+    font-size: 12px;
+    line-height: 12px;
+   }
+
+
+   .login_landing .login_container .login_wrapper .login_actions .login_actions_login_stackbl{
+    font-size: 12px;
+    padding: 10px;
+    line-height: 12px;
+    min-width: 140px;
+    }
+
+}
+
+@media only screen and (max-width: 1299px) {
+  .login_landing .login_container .login_wrapper .login_heading .login_title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+    .login_landing .login_container .login_wrapper .login_actions {
+   margin-top: 9.2%;
+}
+
+.login_landing
+    .login_container
+    .login_wrapper
+    .login_heading
+    .login_subtitle {
+    font-size: 12px;
+    line-height: 12px;
+
+
+
+  }
+}
+
+
+@media only screen and (max-width: 1199px) {
+   .login_landing .login_container .login_wrapper .login_icon {
+    margin: 4% 0 10% 0;
+
+  }
+  .login_landing .login_container .login_wrapper .login_heading .login_title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .login_landing
+    .login_container
+    .login_wrapper
+    .login_heading
+    .login_subtitle {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 4.6%;
+
+  }
+
+  .login_landing .login_container .login_wrapper .login_actions .login_actions_login_stackbl{
+    min-width:130px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 9px 10px;
+    }
+
+    .login_landing .login_container .login_wrapper .login_actions .login_actions_text_link {
+       font-size: 10px;
+      line-height: 10px;
+     }
+
+
+
+
+}
+
+@media only screen and (max-width: 1099px) {
+  .login_landing .login_container .login_wrapper .login_heading .login_title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .login_landing .login_container .login_wrapper .login_actions {
+    font-size: 10px;
+
+  }
+
+}
+
+/** RESPONSIVE CSS END HERE  **/
+

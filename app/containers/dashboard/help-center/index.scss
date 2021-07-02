@@ -1,0 +1,226 @@
+@import '../../../global.scss';
+.help_center_dashboard{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    padding: 0 65px 0;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1555px;
+    padding-bottom:30px
+
+}
+.help_center_dashboard .help_center_heading{
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Gilroy-Bold';
+    color: getcolor(heading_color);
+}
+.help_center_dashboard .help_center_subtitle{
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+    font-family: 'Gilroy-Regular';
+    color: getcolor(sub_heading_color);
+}
+.help_center_dashboard .help_center_grid{
+    padding: 65px 0;
+    justify-content: space-between;
+}
+.help_center_dashboard .help_center_grid > div{
+    max-width: 300px;
+}
+.help_center_dashboard .help_center_grid .help_center_card{
+    padding: 50px 15px;
+    height: 100%;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+}
+.help_center_dashboard .help_center_grid  .help_center_icon{
+    min-height: 65px;
+    align-items: start;
+}
+.help_center_dashboard .help_center_grid  .help_center_icon img{
+    width: 30px;
+}
+.help_center_dashboard .help_center_grid .help_center_card h2{
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Gilroy-Medium';
+    color: getcolor(heading_color);
+}
+.help_center_dashboard .help_center_grid .help_center_card p{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 37px;
+    font-family: 'Gilroy-Regular';
+    color: getcolor(sub_heading_color);
+}
+.help_center_dashboard .help_center_grid .help_center_card button{
+    padding: 0;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 15px;
+    min-width: 120px;
+    margin-top: auto;
+    align-self: center;
+}
+.help_center_dashboard .help_center_divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: getcolor(heading_color);
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 14px;
+}
+.help_center_dashboard .help_center_divider::before, .help_center_dashboard .help_center_divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid getcolor(separator_color);
+}
+.help_center_dashboard .help_center_divider::before {
+    margin-right: 20px;
+}
+.help_center_dashboard .help_center_divider::after {
+    margin-left: 20px;
+}
+.help_center_dashboard .help_center_social_link{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 620px;
+}
+.help_center_dashboard .help_center_social_link .help_center_social_grid{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.help_center_dashboard .help_center_social_link .help_center_social_grid > span{
+    font-size: 14px;
+    line-height: 14px;
+    color: getcolor(sub_heading_color);
+    margin-left: 10px;
+    font-family: 'Gilroy-Regular';
+}
+
+.help_center_dashboard .help_center_social_link .help_center_social_grid:hover > span{
+    color: getcolor(heading_color);
+}
+@media only screen and (max-width: 1600px){
+    .help_center_dashboard .help_center_heading{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .help_center_dashboard .help_center_grid{
+        padding: 55px 0;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card{
+        padding: 40px 15px;
+    }
+    .help_center_dashboard .help_center_grid > div{
+        max-width: 290px;
+    }
+
+
+}
+@media only screen and (max-width: 1399px){
+    .help_center_dashboard{
+        height: calc(100vh - 70px);
+        padding-bottom:20px;
+    }
+    .help_center_dashboard .help_center_heading{
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    .help_center_dashboard .help_center_grid  .help_center_icon img{
+        width: 25px;
+    }
+    .help_center_dashboard .help_center_grid{
+        padding: 45px 0;
+    }
+    .help_center_dashboard .help_center_divider{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: getcolor(heading_color);
+        font-family: 'Gilroy-Medium';
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .help_center_dashboard .help_center_social_link{
+        margin-top: 40px;
+    }
+    .help_center_dashboard .help_center_social_link .help_center_social_grid span{
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+@media only screen and (max-width: 1299px){
+    .help_center_dashboard .help_center_heading{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .help_center_dashboard .help_center_subtitle{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card{
+        padding: 40px 15px;
+    }
+    .help_center_dashboard .help_center_grid  .help_center_icon{
+        min-height: 60px;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card h2{
+        margin-bottom: 14px;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card p{
+        margin-bottom: 30px;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card button{
+        padding: 0;
+        min-height: 35px;
+        font-size: 13px;
+        line-height: 13px;
+        min-width: 110px;
+    }
+    .help_center_dashboard .help_center_social_link{
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (max-width: 1099px){
+    .help_center_dashboard .help_center_grid .help_center_card{
+        padding: 35px 15px;
+    }
+    .help_center_dashboard .help_center_grid  .help_center_icon{
+        min-height: 55px;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card h2{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card p{
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 25px;
+    }
+    .help_center_dashboard .help_center_grid .help_center_card button{
+        padding: 0;
+        min-height: 30px;
+        font-size: 11px;
+        line-height: 11px;
+        min-width: 95px;
+    }
+}
+

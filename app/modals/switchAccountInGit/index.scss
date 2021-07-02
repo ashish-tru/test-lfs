@@ -1,0 +1,137 @@
+@import '../../global.scss';
+
+.switch_account_in_git_main_modal .switch_account_in_git_modal {
+    padding: 40px 30px;
+ 
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_icon img{
+    width: 60px;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .heading{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    color: getcolor(heading_color);
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_list{
+  padding: 0 0 0 15px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_list li{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    color: getcolor(sub_heading_color);
+    text-align: left;
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_list li:last-child{
+  margin-bottom: 0;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal > div >.switch_account_in_git_modal_btn {
+    justify-content: space-between;
+    flex: 1;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox{
+  margin-top: 30px;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox label{
+  width: 14px;
+  height: 14px;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox label > div{
+  width: 14px;
+  height: 14px;
+  background-size: 7px !important;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox span{
+  font-size: 14px;
+  line-height: 14px;
+}
+.switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_btn button{
+    min-width: 45%;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 8px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1600px){
+   .switch_account_in_git_main_modal .switch_account_in_git_modal{
+        padding: 35px 25px;
+    }
+   .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_icon img{
+        width: 55px;
+    }
+   .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .heading{
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_list{
+      margin-bottom: 35px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox{
+      margin-top: 25px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox label{
+      width: 12px;
+      height: 12px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox label > div{
+      width: 12px;
+      height: 12px;
+      background-size: 6px !important;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox span{
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_list li{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_btn button{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 8px;
+
+    }
+
+}
+
+@media only screen and (max-width: 1399px){
+   .switch_account_in_git_main_modal .switch_account_in_git_modal{
+        padding: 30px 20px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_icon img{
+        width: 50px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .heading{
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_list{
+      margin-bottom: 30px;
+    }
+
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_header .switch_account_in_git_modal_list li{
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_btn button{
+        font-size: 10px;
+        line-height: 10px;
+        padding: 8px 6px;
+    }
+    .switch_account_in_git_main_modal .switch_account_in_git_modal .switch_account_in_git_modal_checkbox{
+      margin-top: 20px;
+    }
+}

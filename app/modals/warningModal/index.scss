@@ -1,0 +1,116 @@
+@import '../../global.scss';
+
+.warning_main_modal .warning_modal{
+    padding: 40px 30px;
+  }
+
+.warning_main_modal .warning_modal .warning_modal_header .warning_modal_icon img{
+    width: 60px;
+}
+
+.warning_main_modal .warning_modal .warning_modal_header .heading{
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    color: getcolor(heading_color);
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-family: 'Gilroy-Medium';
+}
+
+.warning_main_modal .warning_modal .warning_modal_btn {
+    justify-content: space-between;
+    flex: 1;
+}
+
+.warning_main_modal .warning_modal .warning_modal_btn button{
+    min-width: 45%;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 12px 8px;
+    margin: 0;
+}
+
+.warning_main_modal .warning_modal .warning_modal_header .warning_modal_content {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  color: getcolor(sub_heading_color);
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Gilroy-Regular';
+}
+
+.warning_main_modal .warning_modal .warning_modal_header .warning_modal_content .warning_modal_link {
+  color: getcolor(theme_color);
+  cursor: pointer;
+  padding-left: 5px;
+  font-family: 'Gilroy-Bold';
+ }
+
+ .warning_main_modal .warning_modal .warning_modal_header .warning_modal_content .warning_modal_link:hover {
+   text-decoration: underline;
+ }
+
+@media only screen and (max-width: 1600px){
+
+   .warning_main_modal .warning_modal{
+        padding: 35px 25px;
+    }
+
+   .warning_main_modal .warning_modal .warning_modal_header .warning_modal_icon img{
+        width: 55px;
+    }
+
+   .warning_main_modal .warning_modal .warning_modal_header .heading{
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    .warning_main_modal .warning_modal .warning_modal_btn button{
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px 8px;
+    }
+
+    .warning_main_modal .warning_modal .warning_modal_header .warning_modal_content {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 35px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1399px) {
+
+   .warning_main_modal .warning_modal{
+        padding: 30px 20px;
+    }
+
+    .warning_main_modal .warning_modal .warning_modal_header .warning_modal_icon img{
+        width: 50px;
+    }
+
+    .warning_main_modal .warning_modal .warning_modal_header .heading{
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .warning_main_modal .warning_modal .warning_modal_btn button{
+        font-size: 10px;
+        line-height: 10px;
+        padding: 8px 6px;
+    }
+
+    .warning_main_modal .warning_modal .warning_modal_header .warning_modal_content {
+      font-size: 11px;
+      line-height: 16px;
+      margin-bottom: 30px;
+    }
+
+}

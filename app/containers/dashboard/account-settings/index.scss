@@ -1,0 +1,1412 @@
+@import "../../../global.scss";
+
+.account_settings_dashboard {
+  padding: 60px 5% 0;
+  color: #fff;
+}
+
+.account_settings_dashboard .account_settings_heading .account_settings_title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  line-height: 24px;
+  color: getcolor(heading_color);
+  font-family: "Gilroy-Bold";
+}
+
+.account_settings_dashboard .account_settings_heading .account_settings_sub_title {
+  font-size: 16px;
+  margin: 0;
+  line-height: 16px;
+  color: getcolor(sub_heading_color);
+  font-family: "Gilroy-Regular";
+  font-weight: normal;
+}
+
+.account_settings_dashboard .account_settings_main_wrapper .account_settings_user_info {
+  border-bottom: 1px solid getcolor(user_info_border_color);
+  margin: 0 0 20px 0;
+  padding-bottom: 30px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.account_settings_dashboard .account_setting_user_password_modal ul {
+  padding: 0 0 0 15px;
+  text-align: left;
+}
+.account_settings_dashboard .account_setting_user_password_modal ul li {
+  font-size: 14px;
+  color: getcolor(passowrd_modal_list);
+  list-style-type: disc;
+  margin-bottom: 10px;
+  line-height: 14px;
+}
+.account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul {
+  border: 0;
+}
+
+.account_settings_dashboard .account_setting_logout_modal .account_setting_logout_modal_content li {
+  padding: 0;
+  list-style-type: disc;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 14px 20px;
+  border: 0;
+  font-family: "Gilroy-Regular";
+  background-color: getcolor(vertical_tab_li_color_bg);
+}
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_list_heading img {
+  width: 10px;
+}
+.account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li img {
+  width: 18px;
+}
+
+.account_settings_dashboard .account_setting_logout_modal button span {
+  font-size: 12px;
+  line-height: 12px;
+}
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_progressbar_status span {
+  color: #f35057;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Gilroy-Bold";
+}
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_list_heading span {
+  padding-left: 8px;
+  color: getcolor(passowrd_modal_list);
+}
+.account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li span {
+  margin-left: 20px;
+}
+
+/** ACCOUNT INFO TAB CSS START FROM HERE ***/
+
+.account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs {
+  margin-top: 60px;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tabs
+  .account_settings_user_info
+  .account_settings_user_avatar {
+  background-color: getcolor(theme_color);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50px;
+  line-height: 40px;
+  font-family: "Gilroy-Bold";
+}
+.account_settings_dashboard
+  .account_setting_edit_user_modal
+  .account_setting_edit_user_modal_buttonGroup
+  .account_setting_edit_user_modal_cancel_button
+  span {
+  color: getcolor(theme_color);
+}
+.account_settings_dashboard
+  .account_setting_user_password_modal
+  .account_setting_user_password_modal_buttonGroup
+  .account_setting_user_password_modal_cancel_button
+  span {
+  color: getcolor(theme_color);
+  font-family: "Gilroy-Regular";
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tabs
+  .account_settings_user_info
+  .account_settings_user_avatar
+  span {
+  line-height: 18px;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tabs
+  .account_settings_user_info
+  .account_settings_user_name {
+  font-size: 18px;
+  line-height: 25px;
+  color: getcolor(text_color);
+  margin-left: 20px;
+  word-break: break-word;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row {
+  border: 1px solid getcolor(account_setting_border_color);
+  background-color: getcolor(account_setting_row_bg);
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.account_settings_dashboard
+.account_settings_main_wrapper
+.account_settings_tab_ssh_key
+.account_settings_tab_panel_row{
+  background-color: transparent;
+  border-color: transparent;
+  padding-top: 0!important;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_heading {
+  padding: 0;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_heading
+  h4 {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0;
+  font-family: "Gilroy-Bold";
+  color: getcolor(heading_color);
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content {
+  margin: 0;
+  padding: 40px 0 20px;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content.account_settings_tab_panel_row_second {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content.account_settings_tab_panel_row_last {
+  padding: 20px 0 0;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col {
+  padding-left: 0;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col.account_settings_tab_panel_col_buttons {
+   display: flex;
+   align-items: center;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_passowrd {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.account_settings_dashboard
+  .account_setting_edit_user_modal
+  .account_setting_edit_user_modal_buttonGroup
+  .account_setting_edit_user_modal_cancel_button:hover
+  span,
+.account_settings_dashboard
+  .account_setting_edit_user_modal
+  .account_setting_edit_user_modal_buttonGroup
+  .account_setting_edit_user_modal_cancel_button:active
+  span,
+.account_settings_dashboard
+  .account_setting_edit_user_modal
+  .account_setting_edit_user_modal_buttonGroup
+  .account_setting_edit_user_modal_cancel_button:focus
+  span {
+  text-decoration: underline;
+}
+
+.account_settings_dashboard
+  .account_setting_user_password_modal
+  .account_setting_user_password_modal_buttonGroup
+  .account_setting_user_password_modal_cancel_button:hover
+  span,
+.account_settings_dashboard
+  .account_setting_user_password_modal
+  .account_setting_user_password_modal_buttonGroup
+  .account_setting_user_password_modal_cancel_button:active
+  span,
+.account_settings_dashboard
+  .account_setting_user_password_modal
+  .account_setting_user_password_modal_buttonGroup
+  .account_setting_user_password_modal_cancel_button:focus
+  span {
+  text-decoration: underline;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  ul
+  li
+  span {
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  margin-left: 0;
+  line-height: 15px;
+  color: getcolor(text_color);
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_passowrd
+  span {
+  background-color: getcolor(account_info_password);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 7px;
+  display: block;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col_last {
+  padding-right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_change_btn {
+  padding: 12px 10px;
+  min-width: 100px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.account_settings_dashboard
+.account_settings_main_wrapper
+.account_settings_tab_panel_account_info
+.account_settings_tab_panel_row
+.account_settings_tab_panel_row_content
+.account_settings_change_btn.account_settings_login_logout_btn {
+  margin-left: 30px;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_change_btn.account_settings_login_logout_btn span {
+   color: getcolor(theme_color);
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content .account_settings_change_btn.account_settings_change_btn_github{
+    min-width: 160px;
+    margin-left: 15px;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col
+  span {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0;
+  font-weight: normal;
+  color: getcolor(text_color);
+  display: block;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col
+  span.account_settings_not_signed_in {
+    font-style: italic;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content.account_settings_tab_panel_row_content_border {
+  border-top: 1px solid getcolor(vertical_tab_content_row_border);
+}
+
+/** ACCOUNT INFO TAB CSS ENDS HERE **/
+
+/** THEME TAB CSS START FROM HERE **/
+
+.account_settings_dashboard .account_settings_main_wrapper .account_settings_tab_panel_theme .account_settings_tab_panel_row {
+  border: 1px solid getcolor(account_setting_border_color);
+  background-color: getcolor(account_setting_row_bg);
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_heading {
+  padding: 0;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_heading
+  h4 {
+  font-size: 18px;
+  padding: 0;
+  line-height: 18px;
+  font-family: "Gilroy-Bold";
+  font-weight: normal;
+  color: getcolor(heading_color);
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content {
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col {
+  padding-left: 0;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col_last {
+  padding-right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content
+  .account_settings_tab_panel_col
+  span {
+  font-size: 12px;
+  padding: 0;
+  line-height: 12px;
+  font-weight: normal;
+  color: getcolor(text_color);
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content.account_settings_tab_panel_row_content_border {
+  border-top: 1px solid getcolor(vertical_tab_content_row_border);
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color {
+  padding: 0;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 50px 0 0;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  ul
+  li {
+  text-align: center;
+  background-color: transparent;
+  padding: 0;
+}
+
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  ul
+  li
+  .account_settings_tab_panel_row_theme_color_options {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  ul
+  li
+  .account_settings_tab_panel_row_theme_color_options.checkmark {
+  background-image: url("../../../resources/Icons/Common/check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  .theme_switch {
+  margin-top: 50px;
+}
+
+.account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  .theme_switch
+  div {
+  color: getcolor(account_setting_theme_mode_title);
+  font-size: 16px;
+  line-height: 16px;
+  margin-right: 60px;
+}
+
+.account_settings_dashboard .account_setting_logout_modal {
+  padding: 37px 22px 30px;
+  cursor: default;
+  background-color: getcolor(logout_modal_background_color);
+}
+
+.account_settings_dashboard .account_setting_logout_modal .account_setting_logout_modal_title {
+  color: getcolor(logout_modal_heading_color);
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.account_settings_dashboard .account_setting_logout_modal .account_setting_logout_modal_content {
+  color: getcolor(modal_content);
+  text-align: left;
+  font-size: 11px;
+  padding: 0 0 0 10px;
+  margin: 0 5px 30px;
+  line-height: 14px;
+}
+
+.account_settings_dashboard .account_setting_logout_modal .account_setting_logout_modal_checkbox {
+  margin-top: 20px;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+/** Edit user setting modal **/
+
+.account_settings_dashboard .account_setting_edit_user_modal {
+  background-color: getcolor(user_info_background_color);
+  padding: 40px 30px;
+}
+
+.account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_info_title {
+  text-align: left;
+  border-bottom: 1px solid getcolor(modal_heading_border);
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-family: "Gilroy-Bold";
+  color: getcolor(user_info_modal_title);
+  margin-bottom: 40px;
+}
+
+.account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_info_input_label {
+  background-color: getcolor(modal_input_label_color);
+}
+
+.account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_info_input {
+  margin-bottom: 30px;
+}
+
+.account_settings_dashboard .account_setting_edit_user_main_modal .account_setting_edit_user_modal button {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 12px 10px;
+  min-width: 80px;
+}
+
+.account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_modal_buttonGroup {
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.account_settings_dashboard
+  .account_setting_edit_user_main_modal
+  .account_setting_edit_user_modal
+  > div
+  .account_setting_edit_user_modal_buttonGroup
+  .account_setting_edit_user_modal_cancel_button {
+  padding: 0;
+  min-width: 0;
+  margin-right: 40px;
+}
+
+
+/** Edit user setting modal **/
+
+/** Change passpword modal  start **/
+
+.account_settings_dashboard .account_setting_user_password_modal {
+  background-color: getcolor(user_info_background_color);
+  padding: 40px;
+}
+
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_title {
+  text-align: left;
+  border-bottom: 1px solid getcolor(modal_heading_border);
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Gilroy-Bold";
+  color: getcolor(user_info_modal_title);
+  margin-bottom: 30px;
+}
+
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_input_label {
+  background-color: getcolor(modal_input_label_color);
+}
+
+.account_settings .account_setting_user_password_modal .account_setting_user_password_input {
+  margin-top: 30px;
+}
+
+.account_settings_dashboard
+  .account_setting_user_password_modal
+  .account_setting_user_password_progressbar_status {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+  margin-top: 12px;
+  color: getcolor(passowrd_modal_status_text);
+  margin-bottom: 30px;
+}
+
+.account_settings_dashboard .account_setting_user_password_main_modal .account_setting_user_password_modal button {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 12px 10px;
+  min-width: 80px;
+}
+
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_modal_buttonGroup {
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.account_settings_dashboard
+  .account_setting_user_password_main_modal
+  .account_setting_user_password_modal
+  > div
+  .account_setting_user_password_modal_buttonGroup
+  .account_setting_user_password_modal_cancel_button {
+  padding: 0;
+  margin-right: 40px;
+  min-width: 0;
+}
+
+.account_settings_dashboard
+  .account_setting_user_password_modal
+  .account_setting_user_password_list_heading {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 30px;
+}
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_progress_bar {
+  margin-top: 20px;
+}
+
+.account_settings_dashboard .account_setting_user_password_modal ul li strong {
+  color: getcolor(passowrd_modal_list_bold);
+}
+
+/** Change passpword modal ends **/
+
+/** THEME TAB CSS ENDS HERE **/
+
+/** RESPONSIVE CSS START FROM HERE **/
+
+@media only screen and (max-width: 1700px) {
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content
+    .account_settings_change_btn {
+    padding: 11px 9px;
+    min-width: 90px;
+    font-size: 13px;
+    line-height: 12px;
+  }
+  .account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content .account_settings_change_btn.account_settings_change_btn_github{
+    min-width: 140px;
+}
+}
+
+@media only screen and (max-width: 1600px) {
+  .account_settings_dashboard {
+    padding-top: 50px;
+  }
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li img {
+    width: 16px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row {
+    padding: 25px;
+  }
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs {
+    margin-top: 50px;
+  }
+
+  .account_settings_dashboard .account_settings_heading .account_settings_title {
+    font-size: 20px;
+    margin-bottom: 14px;
+    line-height: 20px;
+  }
+  .account_settings_dashboard .account_settings_heading .account_settings_sub_title {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 14px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_heading
+    h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_heading
+    h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_theme
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_theme_color
+  ul
+  li
+  span {
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content
+    .account_settings_tab_panel_col
+    span {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content {
+    padding: 30px 0 15px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    .theme_switch
+    div {
+    font-size: 14px;
+    margin-right: 80px;
+    line-height: 12px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content
+    .account_settings_change_btn {
+    padding: 10px 8px;
+    min-width: 80px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+
+  .account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content .account_settings_change_btn.account_settings_change_btn_github{
+    min-width: 125px;
+    margin-right: 10px;
+}
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tabs
+    .account_settings_user_info
+    .account_settings_user_name {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 15px;
+  }
+  .account_settings .account_setting_user_password_modal ul {
+    padding: 0 0 0 13px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul {
+    margin-top: 40px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    .theme_switch {
+    margin-top: 40px;
+  }
+  .account_settings_dashboard .account_setting_user_password_modal ul li {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 9px 16px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul
+    li
+    .account_settings_tab_panel_row_theme_color_options {
+    width: 30px;
+    height: 30px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul
+    li
+    .account_settings_tab_panel_row_theme_color_options.checkmark {
+    background-size: 12px;
+  }
+  .account_settings_dashboard .account_setting_edit_user_modal {
+    padding: 30px 20px;
+  }
+  .account_settings_dashboard
+  .account_setting_edit_user_modal
+  .account_setting_edit_user_info_title {
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+  }
+  .account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_modal_buttonGroup {
+    margin-top: 35px;
+  }
+  .account_settings_dashboard .account_setting_edit_user_main_modal .account_setting_edit_user_modal button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 8px;
+    min-width: 70px;
+  }
+  .account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_info_input {
+    margin-bottom: 20px;
+  }
+  .account_settings_dashboard
+    .account_setting_edit_user_main_modal
+    .account_setting_edit_user_modal
+    > div
+    .account_setting_edit_user_modal_buttonGroup
+    .account_setting_edit_user_modal_cancel_button {
+    padding: 0;
+    min-width: 0;
+    margin-right: 30px;
+  }
+  .account_settings_dashboard .account_setting_user_password_main_modal .account_setting_user_password_modal button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px 8px;
+    min-width: 70px;
+  }
+
+  .account_settings_dashboard .account_setting_user_password_modal {
+    padding: 30px;
+  }
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_input {
+    margin-top: 25px;
+  }
+  .account_settings_dashboard
+    .account_setting_user_password_main_modal
+    .account_setting_user_password_modal
+    > div
+    .account_setting_user_password_modal_buttonGroup
+    .account_setting_user_password_modal_cancel_button {
+    margin-right: 35px;
+  }
+
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_list_heading {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .account_settings .account_setting_user_password_modal .account_setting_user_password_list_heading img {
+    width: 8px;
+  }
+
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_progress_bar {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .account_settings_dashboard {
+    padding-top: 45px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .account_settings_dashboard {
+    padding-top: 35px;
+  }
+  .account_settings .account_settings_main_wrapper .account_settings_tabs {
+    margin-top: 40px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tabs
+    .account_settings_user_info
+    .account_settings_user_avatar {
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    font-size: 14px;
+  }
+  .account_settings_dashboard .account_settings_heading .account_settings_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 18px;
+  }
+
+  .account_settings_dashboard .account_settings_heading .account_settings_sub_title {
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 12px;
+  }
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_list_heading img {
+    width: 6px !important;
+  }
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li img {
+    width: 12px;
+  }
+  .account_settings_dashboard .account_setting_logout_modal button span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .account_settings_dashboard
+  .account_setting_user_password_modal
+  .account_setting_user_password_progressbar_status
+  span {
+  padding-left: 8px;
+  font-size: 11px;
+  line-height: 11px;
+}
+.account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_list_heading span {
+  padding-left: 8px;
+}
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li span {
+    margin-left: 15px;
+  }
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_user_info {
+    margin: 0 0 15px 0;
+    padding-bottom: 20px;
+  }
+
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul {
+    border: 0;
+  }
+
+  .account_settings_dashboard .account_setting_user_password_modal ul li {
+    font-size: 10px;
+    margin-bottom: 10px;
+    line-height: 10px;
+  }
+
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content {
+    padding: 25px 0 10px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content.account_settings_tab_panel_row_last {
+    padding: 13px 0 0;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tabs
+    .account_settings_user_info
+    .account_settings_user_name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 12px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_heading
+    h4 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_heading
+    h4 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul
+    li
+    span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content
+    .account_settings_tab_panel_col
+    span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content
+    .account_settings_change_btn {
+    padding: 6px 8px;
+    min-width: 60px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .account_settings_dashboard
+.account_settings_main_wrapper
+.account_settings_tab_panel_account_info
+.account_settings_tab_panel_row
+.account_settings_tab_panel_row_content
+.account_settings_change_btn.account_settings_login_logout_btn {
+  margin-left: 25px;
+}
+  .account_settings_dashboard
+  .account_settings_main_wrapper
+  .account_settings_tab_panel_account_info
+  .account_settings_tab_panel_row
+  .account_settings_tab_panel_row_content .account_settings_change_btn.account_settings_change_btn_github{
+    min-width: 100px;
+}
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content
+    .account_settings_tab_panel_passowrd
+    span {
+    width: 6px;
+    height: 6px;
+    margin-right: 5px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content
+    .account_settings_tab_panel_col
+    span {
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content.account_settings_tab_panel_row_second {
+    padding-top: 25px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row {
+    padding: 20px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row.account_settings_tab_panel_row_top {
+    padding: 20px;
+  }
+
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tab_panel_theme .account_settings_tab_panel_row {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    .theme_switch {
+    margin-top: 30px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul {
+    margin: 30px 0 0;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul
+    li {
+    text-align: center;
+    width: auto;
+    padding: 0;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    .theme_switch
+    div {
+    font-size: 11px;
+    margin-right: 80px;
+    line-height: 12px;
+  }
+
+  .account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_info_title {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 30px;
+
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    h4 {
+    margin-bottom: 0;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul
+    li
+    .account_settings_tab_panel_row_theme_color_options {
+    width: 24px;
+    height: 24px;
+  }
+
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_theme_color
+    ul
+    li
+    .account_settings_tab_panel_row_theme_color_options.checkmark {
+    background-size: 8px;
+  }
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_input {
+    margin-top: 20px;
+  }
+
+  /*** modal css ***/
+
+  .account_settings_dashboard
+    .account_setting_edit_user_modal
+    .account_setting_edit_user_modal_buttonGroup {
+    margin-top: 30px;
+  }
+
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_title {
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 25px;
+  }
+
+  .account_settings_dashboard
+    .account_setting_user_password_modal
+    .account_setting_user_password_progressbar_status {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 8px;
+  }
+
+
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_list_heading {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 20px;
+  }
+
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_modal_buttonGroup {
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  /*** modal css ***/
+
+}
+
+@media only screen and (max-width: 1299px) {
+  // .account_settings_dashboard .account_setting_edit_user_modal {
+  //   padding: 20px;
+  // }
+
+  .account_settings_dashboard .account_setting_user_password_modal {
+    padding: 20px;
+  }
+
+  .account_settings_dashboard {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .account_settings_dashboard .account_settings_heading .account_settings_title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_theme
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_heading
+    h4 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .account_settings_dashboard .account_settings_main_wrapper .account_settings_tabs ul li {
+    font-size: 11px;
+    line-height: 11px;
+    padding: 9px 12px;
+  }
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tabs
+    .account_settings_user_info
+    .account_settings_user_name {
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 10px;
+  }
+  .account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_info_title {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 25px;
+
+  }
+  .account_settings_dashboard .account_setting_edit_user_modal .account_setting_edit_user_modal_buttonGroup {
+    margin-top: 25px;
+  }
+  .account_settings_dashboard
+    .account_setting_edit_user_main_modal
+    .account_setting_edit_user_modal
+    > div
+    .account_setting_edit_user_modal_buttonGroup
+    .account_setting_edit_user_modal_cancel_button {
+    padding: 0;
+    min-width: 0;
+    margin-right: 25px;
+  }
+  .account_settings_dashboard .account_setting_edit_user_main_modal .account_setting_edit_user_modal button {
+    font-size: 11px;
+    line-height: 11px;
+    padding: 6px 8px;
+    min-width: 60px;
+  }
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_progress_bar {
+    margin-top: 10px;
+  }
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_modal_buttonGroup button {
+    font-size: 11px;
+    line-height: 11px;
+    padding: 6px 8px;
+    min-width: 60px;
+  }
+  .account_settings_dashboard .account_setting_user_password_modal .account_setting_user_password_title {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 20px;
+  }
+  .account_settings_dashboard
+    .account_setting_user_password_main_modal
+    .account_setting_user_password_modal
+    > div
+    .account_setting_user_password_modal_buttonGroup
+    .account_setting_user_password_modal_cancel_button {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) and (max-height: 810px) {
+  .account_settings_dashboard
+    .account_settings_main_wrapper
+    .account_settings_tab_panel_account_info
+    .account_settings_tab_panel_row
+    .account_settings_tab_panel_row_content {
+    padding: 20px 0 10px;
+  }
+}
+
+/** RESPONSIVE CSS ENDS HERE ***/

@@ -1,0 +1,63 @@
+@import '../../global.scss';
+.create_ssh_key_modal .create_ssh_key_modal_container {
+  padding: 0;
+  width: 55%;
+  background-color: getcolor(dashboard_background);
+  max-height: 620px;
+}
+
+.create_ssh_key_modal .create_ssh_key_modal_container .create_ssh_key_modal_content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  }
+  .create_ssh_key_modal .create_ssh_key_modal_container .create_ssh_key_modal_body_content{
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 30px;
+    padding-bottom: 0px;
+    overflow-y: overlay;
+    max-height: 400px;
+  }
+  .create_ssh_key_modal .create_ssh_key_modal_container .modal_footer{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      flex-shrink: 0;
+      padding: 20px;
+      border-top: 1px solid getcolor(divider_color);
+  }
+  .create_ssh_key_modal .create_ssh_key_modal_container .create_ssh_key_modal_body_content::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: transparent;
+  }
+  
+  .create_ssh_key_modal .create_ssh_key_modal_container .create_ssh_key_modal_body_content::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+  
+  .create_ssh_key_modal .create_ssh_key_modal_container .create_ssh_key_modal_body_content::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: getcolor(scrollbar_roll_color);
+  }
+.create_ssh_key_modal .create_new_project_close_icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.create_ssh_key_modal .create_new_project_close_icon img {
+  width: 100%;
+  display: block;
+}
+
+
+@media screen and (max-width: 1299px){
+  .create_ssh_key_modal .create_ssh_key_modal_container {
+    width: 65%;
+  }
+}

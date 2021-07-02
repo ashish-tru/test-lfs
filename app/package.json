@@ -1,0 +1,27 @@
+{
+  "name": "stackabl",
+  "productName": "Stackabl",
+  "version": "1.2.5",
+  "description": "Stackabl is a configurable, intelligent and portable environment that helps developers make their software.",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Stackabl",
+    "email": "support@stackabl.io",
+    "url": "https://stackabl.io"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dugite": "^1.92.0",
+    "keytar": "7.0.0",
+    "browser-sync": "^2.26.14"
+  },
+  "devDependencies": {
+    "@types/browser-sync": "^2.26.1",
+    "@types/lokijs": "^1.5.3",
+    "@types/react": "^17.0.0"
+  }
+}

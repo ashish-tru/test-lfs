@@ -1,0 +1,171 @@
+@import '../../../global.scss';
+
+.create_new_project_dashboard {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+}
+.create_new_project_dashboard .create_new_project_outer {
+  overflow-y: overlay;
+  height: calc(100% - 81px);
+  padding: 0 65px 0;
+  padding-top: 6%;
+  overflow-x: hidden;
+}
+.create_new_project_dashboard
+  .create_new_project_outer::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+.create_new_project_dashboard .create_new_project_outer::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.create_new_project_dashboard
+  .create_new_project_outer::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: getcolor(scrollbar_roll_color);
+}
+.create_new_project_dashboard .create_new_project_inner_container {
+  width: 950px;
+  margin: 0 auto;
+}
+.create_new_project_dashboard
+  .create_new_project_inner_container
+  .create_new_project_select_dropdown {
+  margin-bottom: 20px;
+}
+.create_new_project_dashboard
+  .create_new_project_inner_container
+  .select_list_outer
+  > div {
+  max-height: 160px;
+}
+.create_new_project_dashboard
+  .create_new_project_inner_container
+  .create_new_project_heading {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(heading_color);
+  text-align: center;
+}
+.create_new_project_dashboard
+  .create_new_project_inner_container
+  .create_new_project_steps {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  font-family: 'Gilroy-Medium';
+  color: getcolor(sub_heading_color);
+  border-bottom: 1px solid getcolor(divider_color);
+}
+
+@media only screen and (max-width: 1800px) {
+  .create_new_project_dashboard .create_new_project_outer {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .create_new_project_dashboard .create_new_project_inner_container {
+    width: 850px;
+  }
+  .create_new_project_dashboard .create_new_project_outer {
+    height: calc(100% - 71px);
+  }
+
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .create_new_project_dashboard {
+    height: calc(100vh - 70px);
+  }
+  .create_new_project_dashboard .create_new_project_inner_container {
+    width: 750px;
+  }
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+  }
+
+}
+@media only screen and (max-width: 1299px) {
+  .create_new_project_dashboard .create_new_project_inner_container {
+    width: 700px;
+  }
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) and (max-height: 810px) {
+  .create_new_project_dashboard .create_new_project_outer {
+    padding-top: 3%;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) and (max-height: 710px) {
+  .create_new_project_dashboard .create_new_project_outer {
+    padding-top: 2.5%;
+  }
+}
+@media only screen and (max-height: 768px) {
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    margin-bottom: 40px;
+  }
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_heading {
+    margin-bottom: 35px;
+  }
+  .create_new_project_dashboard
+    .create_new_project_inner_container
+    .create_new_project_steps {
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+  }
+}

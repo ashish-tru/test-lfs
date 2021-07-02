@@ -1,0 +1,141 @@
+@import '../../../global.scss';
+
+.empty_project_dashboard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: calc(100vh - 100px);
+}
+.empty_project_dashboard .empty_project_wraper{
+  padding-bottom: 30px;
+}
+.empty_project_dashboard .empty_project_wraper .empty_project_heading {
+  font-size: 26px;
+  color: getcolor(heading_color);
+  margin: 0;
+  line-height: 26px;
+  font-family: 'Gilroy-Medium';
+}
+
+.empty_project_dashboard .empty_project_wraper .empty_project_sub_heading {
+  font-size: 16px;
+  color: getcolor(sub_heading_color);
+  margin: 0;
+  margin-top: 30px;
+  line-height: 16px;
+  font-family: 'Gilroy-Regular';
+}
+
+.empty_project_dashboard .empty_project_wraper .empty_project_icon {
+  margin-bottom: 60px;
+  cursor: default;
+}
+
+.empty_project_dashboard .empty_project_wraper .empty_project_icon img {
+  margin: 0 auto;
+  display: block;
+  width: 6%;
+}
+
+.empty_project_dashboard .empty_project_wraper .empty_project_create_project_btn{
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 16px 10px;
+  min-width: 190px;
+}
+.empty_project_dashboard .empty_project_wraper .empty_project_create_project_btn img{
+  margin-right: 14px;
+  width: 14px;
+}
+
+/** RESPONSIVE CSS START FROM HERE **/
+
+
+@media only screen and (max-width: 1600px) {
+  .empty_project_dashboard .empty_project_wraper .empty_project_heading {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .empty_project_dashboard .empty_project_wraper .empty_project_sub_heading {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 25px;
+  }
+  .empty_project_dashboard .empty_project_wraper .empty_project_icon {
+    margin-bottom: 55px;
+  }
+  .empty_project_dashboard .empty_project_wraper .empty_project_create_project_btn{
+    margin-top: 35px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 13px 6px;
+    min-width: 175px;
+  }
+  .empty_project_dashboard .empty_project_wraper .empty_project_create_project_btn img{
+    margin-right: 12px;
+    width: 12px;
+  }
+  .empty_project_dashboard .empty_project_wraper .empty_project_icon img {
+    width: 6.5%;
+  }
+
+}
+
+
+@media only screen and (max-width: 1399px) {
+  .empty_project_dashboard {
+    height: calc(100vh - 70px);
+  }
+  .empty_project_dashboard .empty_project_wraper{
+    padding-bottom: 20px;
+  }
+  .empty_project .empty_project_wraper .empty_project_heading {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .empty_project_dashboard .empty_project_wraper .empty_project_sub_heading {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 20px;
+
+  }
+  .empty_project_dashboard .empty_project_wraper .empty_project_icon {
+    margin-bottom: 50px;
+  }
+
+  .empty_project_dashboard .empty_project_wraper .empty_project_icon img {
+    width: 7%;
+  }
+
+}
+
+@media only screen and (max-width: 1199px) {
+  .empty_project_dashboard .empty_project_wraper .empty_project_heading {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .empty_project_dashboard .empty_project_wraper .empty_project_sub_heading {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .empty_project_dashboard .empty_project_wraper .empty_project_create_project_btn{
+    margin-top: 30px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 9px 6px;
+    min-width: 150px;
+  }
+  .empty_project_dashboard .empty_project_wraper .empty_project_create_project_btn img{
+    margin-right: 10px;
+    width: 10px;
+  }
+
+}
+
+
+/** RESPONSIVE CSS ENDS HERE **/
